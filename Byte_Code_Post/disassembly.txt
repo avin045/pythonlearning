@@ -1,0 +1,1681 @@
+
+main.cpython-311-x86_64-linux-gnu.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+0000000000002000 <_init>:
+    2000:	f3 0f 1e fa          	endbr64
+    2004:	48 83 ec 08          	sub    $0x8,%rsp
+    2008:	48 8b 05 79 3f 00 00 	mov    0x3f79(%rip),%rax        # 5f88 <__gmon_start__@Base>
+    200f:	48 85 c0             	test   %rax,%rax
+    2012:	74 02                	je     2016 <_init+0x16>
+    2014:	ff d0                	call   *%rax
+    2016:	48 83 c4 08          	add    $0x8,%rsp
+    201a:	c3                   	ret
+
+Disassembly of section .plt:
+
+0000000000002020 <PyUnicode_FromFormat@plt-0x10>:
+    2020:	ff 35 ca 3f 00 00    	push   0x3fca(%rip)        # 5ff0 <_GLOBAL_OFFSET_TABLE_+0x8>
+    2026:	ff 25 cc 3f 00 00    	jmp    *0x3fcc(%rip)        # 5ff8 <_GLOBAL_OFFSET_TABLE_+0x10>
+    202c:	0f 1f 40 00          	nopl   0x0(%rax)
+
+0000000000002030 <PyUnicode_FromFormat@plt>:
+    2030:	ff 25 ca 3f 00 00    	jmp    *0x3fca(%rip)        # 6000 <PyUnicode_FromFormat@Base>
+    2036:	68 00 00 00 00       	push   $0x0
+    203b:	e9 e0 ff ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002040 <PyDict_SetItemString@plt>:
+    2040:	ff 25 c2 3f 00 00    	jmp    *0x3fc2(%rip)        # 6008 <PyDict_SetItemString@Base>
+    2046:	68 01 00 00 00       	push   $0x1
+    204b:	e9 d0 ff ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002050 <_PyThreadState_UncheckedGet@plt>:
+    2050:	ff 25 ba 3f 00 00    	jmp    *0x3fba(%rip)        # 6010 <_PyThreadState_UncheckedGet@Base>
+    2056:	68 02 00 00 00       	push   $0x2
+    205b:	e9 c0 ff ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002060 <PyModuleDef_Init@plt>:
+    2060:	ff 25 b2 3f 00 00    	jmp    *0x3fb2(%rip)        # 6018 <PyModuleDef_Init@Base>
+    2066:	68 03 00 00 00       	push   $0x3
+    206b:	e9 b0 ff ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002070 <Py_EnterRecursiveCall@plt>:
+    2070:	ff 25 aa 3f 00 00    	jmp    *0x3faa(%rip)        # 6020 <Py_EnterRecursiveCall@Base>
+    2076:	68 04 00 00 00       	push   $0x4
+    207b:	e9 a0 ff ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002080 <PyFrame_New@plt>:
+    2080:	ff 25 a2 3f 00 00    	jmp    *0x3fa2(%rip)        # 6028 <PyFrame_New@Base>
+    2086:	68 05 00 00 00       	push   $0x5
+    208b:	e9 90 ff ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002090 <PyNumber_Add@plt>:
+    2090:	ff 25 9a 3f 00 00    	jmp    *0x3f9a(%rip)        # 6030 <PyNumber_Add@Base>
+    2096:	68 06 00 00 00       	push   $0x6
+    209b:	e9 80 ff ff ff       	jmp    2020 <_init+0x20>
+
+00000000000020a0 <PyObject_GetAttrString@plt>:
+    20a0:	ff 25 92 3f 00 00    	jmp    *0x3f92(%rip)        # 6038 <PyObject_GetAttrString@Base>
+    20a6:	68 07 00 00 00       	push   $0x7
+    20ab:	e9 70 ff ff ff       	jmp    2020 <_init+0x20>
+
+00000000000020b0 <PyImport_AddModule@plt>:
+    20b0:	ff 25 8a 3f 00 00    	jmp    *0x3f8a(%rip)        # 6040 <PyImport_AddModule@Base>
+    20b6:	68 08 00 00 00       	push   $0x8
+    20bb:	e9 60 ff ff ff       	jmp    2020 <_init+0x20>
+
+00000000000020c0 <PyBytes_FromStringAndSize@plt>:
+    20c0:	ff 25 82 3f 00 00    	jmp    *0x3f82(%rip)        # 6048 <PyBytes_FromStringAndSize@Base>
+    20c6:	68 09 00 00 00       	push   $0x9
+    20cb:	e9 50 ff ff ff       	jmp    2020 <_init+0x20>
+
+00000000000020d0 <_PyObject_GenericGetAttrWithDict@plt>:
+    20d0:	ff 25 7a 3f 00 00    	jmp    *0x3f7a(%rip)        # 6050 <_PyObject_GenericGetAttrWithDict@Base>
+    20d6:	68 0a 00 00 00       	push   $0xa
+    20db:	e9 40 ff ff ff       	jmp    2020 <_init+0x20>
+
+00000000000020e0 <PyObject_SetAttrString@plt>:
+    20e0:	ff 25 72 3f 00 00    	jmp    *0x3f72(%rip)        # 6058 <PyObject_SetAttrString@Base>
+    20e6:	68 0b 00 00 00       	push   $0xb
+    20eb:	e9 30 ff ff ff       	jmp    2020 <_init+0x20>
+
+00000000000020f0 <PyErr_WarnEx@plt>:
+    20f0:	ff 25 6a 3f 00 00    	jmp    *0x3f6a(%rip)        # 6060 <PyErr_WarnEx@Base>
+    20f6:	68 0c 00 00 00       	push   $0xc
+    20fb:	e9 20 ff ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002100 <_Py_Dealloc@plt>:
+    2100:	ff 25 62 3f 00 00    	jmp    *0x3f62(%rip)        # 6068 <_Py_Dealloc@Base>
+    2106:	68 0d 00 00 00       	push   $0xd
+    210b:	e9 10 ff ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002110 <PyModule_NewObject@plt>:
+    2110:	ff 25 5a 3f 00 00    	jmp    *0x3f5a(%rip)        # 6070 <PyModule_NewObject@Base>
+    2116:	68 0e 00 00 00       	push   $0xe
+    211b:	e9 00 ff ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002120 <PyImport_GetModuleDict@plt>:
+    2120:	ff 25 52 3f 00 00    	jmp    *0x3f52(%rip)        # 6078 <PyImport_GetModuleDict@Base>
+    2126:	68 0f 00 00 00       	push   $0xf
+    212b:	e9 f0 fe ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002130 <PyErr_GivenExceptionMatches@plt>:
+    2130:	ff 25 4a 3f 00 00    	jmp    *0x3f4a(%rip)        # 6080 <PyErr_GivenExceptionMatches@Base>
+    2136:	68 10 00 00 00       	push   $0x10
+    213b:	e9 e0 fe ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002140 <PyErr_SetString@plt>:
+    2140:	ff 25 42 3f 00 00    	jmp    *0x3f42(%rip)        # 6088 <PyErr_SetString@Base>
+    2146:	68 11 00 00 00       	push   $0x11
+    214b:	e9 d0 fe ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002150 <PyInterpreterState_GetID@plt>:
+    2150:	ff 25 3a 3f 00 00    	jmp    *0x3f3a(%rip)        # 6090 <PyInterpreterState_GetID@Base>
+    2156:	68 12 00 00 00       	push   $0x12
+    215b:	e9 c0 fe ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002160 <PyVectorcall_Function@plt>:
+    2160:	ff 25 32 3f 00 00    	jmp    *0x3f32(%rip)        # 6098 <PyVectorcall_Function@Base>
+    2166:	68 13 00 00 00       	push   $0x13
+    216b:	e9 b0 fe ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002170 <PyMem_Realloc@plt>:
+    2170:	ff 25 2a 3f 00 00    	jmp    *0x3f2a(%rip)        # 60a0 <PyMem_Realloc@Base>
+    2176:	68 14 00 00 00       	push   $0x14
+    217b:	e9 a0 fe ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002180 <PyErr_ExceptionMatches@plt>:
+    2180:	ff 25 22 3f 00 00    	jmp    *0x3f22(%rip)        # 60a8 <PyErr_ExceptionMatches@Base>
+    2186:	68 15 00 00 00       	push   $0x15
+    218b:	e9 90 fe ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002190 <PyOS_snprintf@plt>:
+    2190:	ff 25 1a 3f 00 00    	jmp    *0x3f1a(%rip)        # 60b0 <PyOS_snprintf@Base>
+    2196:	68 16 00 00 00       	push   $0x16
+    219b:	e9 80 fe ff ff       	jmp    2020 <_init+0x20>
+
+00000000000021a0 <PyTraceBack_Here@plt>:
+    21a0:	ff 25 12 3f 00 00    	jmp    *0x3f12(%rip)        # 60b8 <PyTraceBack_Here@Base>
+    21a6:	68 17 00 00 00       	push   $0x17
+    21ab:	e9 70 fe ff ff       	jmp    2020 <_init+0x20>
+
+00000000000021b0 <PyObject_Not@plt>:
+    21b0:	ff 25 0a 3f 00 00    	jmp    *0x3f0a(%rip)        # 60c0 <PyObject_Not@Base>
+    21b6:	68 18 00 00 00       	push   $0x18
+    21bb:	e9 60 fe ff ff       	jmp    2020 <_init+0x20>
+
+00000000000021c0 <PyLong_FromLong@plt>:
+    21c0:	ff 25 02 3f 00 00    	jmp    *0x3f02(%rip)        # 60c8 <PyLong_FromLong@Base>
+    21c6:	68 19 00 00 00       	push   $0x19
+    21cb:	e9 50 fe ff ff       	jmp    2020 <_init+0x20>
+
+00000000000021d0 <PyErr_Clear@plt>:
+    21d0:	ff 25 fa 3e 00 00    	jmp    *0x3efa(%rip)        # 60d0 <PyErr_Clear@Base>
+    21d6:	68 1a 00 00 00       	push   $0x1a
+    21db:	e9 40 fe ff ff       	jmp    2020 <_init+0x20>
+
+00000000000021e0 <PyTuple_New@plt>:
+    21e0:	ff 25 f2 3e 00 00    	jmp    *0x3ef2(%rip)        # 60d8 <PyTuple_New@Base>
+    21e6:	68 1b 00 00 00       	push   $0x1b
+    21eb:	e9 30 fe ff ff       	jmp    2020 <_init+0x20>
+
+00000000000021f0 <PyThreadState_Get@plt>:
+    21f0:	ff 25 ea 3e 00 00    	jmp    *0x3eea(%rip)        # 60e0 <PyThreadState_Get@Base>
+    21f6:	68 1c 00 00 00       	push   $0x1c
+    21fb:	e9 20 fe ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002200 <PyObject_SetAttr@plt>:
+    2200:	ff 25 e2 3e 00 00    	jmp    *0x3ee2(%rip)        # 60e8 <PyObject_SetAttr@Base>
+    2206:	68 1d 00 00 00       	push   $0x1d
+    220b:	e9 10 fe ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002210 <PyErr_Occurred@plt>:
+    2210:	ff 25 da 3e 00 00    	jmp    *0x3eda(%rip)        # 60f0 <PyErr_Occurred@Base>
+    2216:	68 1e 00 00 00       	push   $0x1e
+    221b:	e9 00 fe ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002220 <_PyDict_GetItem_KnownHash@plt>:
+    2220:	ff 25 d2 3e 00 00    	jmp    *0x3ed2(%rip)        # 60f8 <_PyDict_GetItem_KnownHash@Base>
+    2226:	68 1f 00 00 00       	push   $0x1f
+    222b:	e9 f0 fd ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002230 <Py_LeaveRecursiveCall@plt>:
+    2230:	ff 25 ca 3e 00 00    	jmp    *0x3eca(%rip)        # 6100 <Py_LeaveRecursiveCall@Base>
+    2236:	68 20 00 00 00       	push   $0x20
+    223b:	e9 e0 fd ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002240 <PyObject_VectorcallDict@plt>:
+    2240:	ff 25 c2 3e 00 00    	jmp    *0x3ec2(%rip)        # 6108 <PyObject_VectorcallDict@Base>
+    2246:	68 21 00 00 00       	push   $0x21
+    224b:	e9 d0 fd ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002250 <PyDict_GetItemString@plt>:
+    2250:	ff 25 ba 3e 00 00    	jmp    *0x3eba(%rip)        # 6110 <PyDict_GetItemString@Base>
+    2256:	68 22 00 00 00       	push   $0x22
+    225b:	e9 c0 fd ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002260 <PyObject_Hash@plt>:
+    2260:	ff 25 b2 3e 00 00    	jmp    *0x3eb2(%rip)        # 6118 <PyObject_Hash@Base>
+    2266:	68 23 00 00 00       	push   $0x23
+    226b:	e9 b0 fd ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002270 <PyDict_New@plt>:
+    2270:	ff 25 aa 3e 00 00    	jmp    *0x3eaa(%rip)        # 6120 <PyDict_New@Base>
+    2276:	68 24 00 00 00       	push   $0x24
+    227b:	e9 a0 fd ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002280 <PyUnicode_AsUTF8@plt>:
+    2280:	ff 25 a2 3e 00 00    	jmp    *0x3ea2(%rip)        # 6128 <PyUnicode_AsUTF8@Base>
+    2286:	68 25 00 00 00       	push   $0x25
+    228b:	e9 90 fd ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002290 <_PyObject_GetDictPtr@plt>:
+    2290:	ff 25 9a 3e 00 00    	jmp    *0x3e9a(%rip)        # 6130 <_PyObject_GetDictPtr@Base>
+    2296:	68 26 00 00 00       	push   $0x26
+    229b:	e9 80 fd ff ff       	jmp    2020 <_init+0x20>
+
+00000000000022a0 <PyUnicode_InternFromString@plt>:
+    22a0:	ff 25 92 3e 00 00    	jmp    *0x3e92(%rip)        # 6138 <PyUnicode_InternFromString@Base>
+    22a6:	68 27 00 00 00       	push   $0x27
+    22ab:	e9 70 fd ff ff       	jmp    2020 <_init+0x20>
+
+00000000000022b0 <PyDict_SetItem@plt>:
+    22b0:	ff 25 8a 3e 00 00    	jmp    *0x3e8a(%rip)        # 6140 <PyDict_SetItem@Base>
+    22b6:	68 28 00 00 00       	push   $0x28
+    22bb:	e9 60 fd ff ff       	jmp    2020 <_init+0x20>
+
+00000000000022c0 <PyType_IsSubtype@plt>:
+    22c0:	ff 25 82 3e 00 00    	jmp    *0x3e82(%rip)        # 6148 <PyType_IsSubtype@Base>
+    22c6:	68 29 00 00 00       	push   $0x29
+    22cb:	e9 50 fd ff ff       	jmp    2020 <_init+0x20>
+
+00000000000022d0 <PyUnicode_Decode@plt>:
+    22d0:	ff 25 7a 3e 00 00    	jmp    *0x3e7a(%rip)        # 6150 <PyUnicode_Decode@Base>
+    22d6:	68 2a 00 00 00       	push   $0x2a
+    22db:	e9 40 fd ff ff       	jmp    2020 <_init+0x20>
+
+00000000000022e0 <PyErr_Format@plt>:
+    22e0:	ff 25 72 3e 00 00    	jmp    *0x3e72(%rip)        # 6158 <PyErr_Format@Base>
+    22e6:	68 2b 00 00 00       	push   $0x2b
+    22eb:	e9 30 fd ff ff       	jmp    2020 <_init+0x20>
+
+00000000000022f0 <PyUnicode_FromStringAndSize@plt>:
+    22f0:	ff 25 6a 3e 00 00    	jmp    *0x3e6a(%rip)        # 6160 <PyUnicode_FromStringAndSize@Base>
+    22f6:	68 2c 00 00 00       	push   $0x2c
+    22fb:	e9 20 fd ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002300 <PyModule_GetDict@plt>:
+    2300:	ff 25 62 3e 00 00    	jmp    *0x3e62(%rip)        # 6168 <PyModule_GetDict@Base>
+    2306:	68 2d 00 00 00       	push   $0x2d
+    230b:	e9 10 fd ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002310 <PyObject_GetAttr@plt>:
+    2310:	ff 25 5a 3e 00 00    	jmp    *0x3e5a(%rip)        # 6170 <PyObject_GetAttr@Base>
+    2316:	68 2e 00 00 00       	push   $0x2e
+    231b:	e9 00 fd ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002320 <PyMem_Malloc@plt>:
+    2320:	ff 25 52 3e 00 00    	jmp    *0x3e52(%rip)        # 6178 <PyMem_Malloc@Base>
+    2326:	68 2f 00 00 00       	push   $0x2f
+    232b:	e9 f0 fc ff ff       	jmp    2020 <_init+0x20>
+
+0000000000002330 <PyCode_NewEmpty@plt>:
+    2330:	ff 25 4a 3e 00 00    	jmp    *0x3e4a(%rip)        # 6180 <PyCode_NewEmpty@Base>
+    2336:	68 30 00 00 00       	push   $0x30
+    233b:	e9 e0 fc ff ff       	jmp    2020 <_init+0x20>
+
+Disassembly of section .plt.got:
+
+0000000000002340 <__cxa_finalize@plt>:
+    2340:	ff 25 9a 3c 00 00    	jmp    *0x3c9a(%rip)        # 5fe0 <__cxa_finalize@GLIBC_2.2.5>
+    2346:	66 90                	xchg   %ax,%ax
+
+Disassembly of section .text:
+
+0000000000002350 <__pyx_bisect_code_objects>:
+    2350:	41 89 f0             	mov    %esi,%r8d
+    2353:	89 f0                	mov    %esi,%eax
+    2355:	89 d1                	mov    %edx,%ecx
+    2357:	41 ff c8             	dec    %r8d
+    235a:	79 0c                	jns    2368 <__pyx_bisect_code_objects+0x18>
+    235c:	31 c0                	xor    %eax,%eax
+    235e:	31 f6                	xor    %esi,%esi
+    2360:	41 b9 02 00 00 00    	mov    $0x2,%r9d
+    2366:	eb 2c                	jmp    2394 <__pyx_bisect_code_objects+0x44>
+    2368:	49 63 d0             	movslq %r8d,%rdx
+    236b:	48 c1 e2 04          	shl    $0x4,%rdx
+    236f:	39 4c 17 08          	cmp    %ecx,0x8(%rdi,%rdx,1)
+    2373:	7d e7                	jge    235c <__pyx_bisect_code_objects+0xc>
+    2375:	eb 38                	jmp    23af <__pyx_bisect_code_objects+0x5f>
+    2377:	44 89 c0             	mov    %r8d,%eax
+    237a:	29 f0                	sub    %esi,%eax
+    237c:	99                   	cltd
+    237d:	41 f7 f9             	idiv   %r9d
+    2380:	01 f0                	add    %esi,%eax
+    2382:	48 63 d0             	movslq %eax,%rdx
+    2385:	48 c1 e2 04          	shl    $0x4,%rdx
+    2389:	39 4c 17 08          	cmp    %ecx,0x8(%rdi,%rdx,1)
+    238d:	7f 0c                	jg     239b <__pyx_bisect_code_objects+0x4b>
+    238f:	7d 1e                	jge    23af <__pyx_bisect_code_objects+0x5f>
+    2391:	8d 70 01             	lea    0x1(%rax),%esi
+    2394:	44 39 c6             	cmp    %r8d,%esi
+    2397:	7c de                	jl     2377 <__pyx_bisect_code_objects+0x27>
+    2399:	eb 05                	jmp    23a0 <__pyx_bisect_code_objects+0x50>
+    239b:	41 89 c0             	mov    %eax,%r8d
+    239e:	eb f4                	jmp    2394 <__pyx_bisect_code_objects+0x44>
+    23a0:	48 63 d0             	movslq %eax,%rdx
+    23a3:	48 c1 e2 04          	shl    $0x4,%rdx
+    23a7:	39 4c 17 08          	cmp    %ecx,0x8(%rdi,%rdx,1)
+    23ab:	7d 02                	jge    23af <__pyx_bisect_code_objects+0x5f>
+    23ad:	ff c0                	inc    %eax
+    23af:	c3                   	ret
+
+00000000000023b0 <__Pyx_IsSubtype>:
+    23b0:	b8 01 00 00 00       	mov    $0x1,%eax
+    23b5:	48 39 f7             	cmp    %rsi,%rdi
+    23b8:	74 49                	je     2403 <__Pyx_IsSubtype+0x53>
+    23ba:	48 8b 97 58 01 00 00 	mov    0x158(%rdi),%rdx
+    23c1:	48 85 d2             	test   %rdx,%rdx
+    23c4:	74 1a                	je     23e0 <__Pyx_IsSubtype+0x30>
+    23c6:	48 8b 4a 10          	mov    0x10(%rdx),%rcx
+    23ca:	31 c0                	xor    %eax,%eax
+    23cc:	48 39 c8             	cmp    %rcx,%rax
+    23cf:	7d 0c                	jge    23dd <__Pyx_IsSubtype+0x2d>
+    23d1:	48 39 74 c2 18       	cmp    %rsi,0x18(%rdx,%rax,8)
+    23d6:	74 26                	je     23fe <__Pyx_IsSubtype+0x4e>
+    23d8:	48 ff c0             	inc    %rax
+    23db:	eb ef                	jmp    23cc <__Pyx_IsSubtype+0x1c>
+    23dd:	31 c0                	xor    %eax,%eax
+    23df:	c3                   	ret
+    23e0:	48 8b bf 00 01 00 00 	mov    0x100(%rdi),%rdi
+    23e7:	48 39 fe             	cmp    %rdi,%rsi
+    23ea:	74 12                	je     23fe <__Pyx_IsSubtype+0x4e>
+    23ec:	48 85 ff             	test   %rdi,%rdi
+    23ef:	75 ef                	jne    23e0 <__Pyx_IsSubtype+0x30>
+    23f1:	31 c0                	xor    %eax,%eax
+    23f3:	48 3b 35 b6 3b 00 00 	cmp    0x3bb6(%rip),%rsi        # 5fb0 <PyBaseObject_Type@Base>
+    23fa:	0f 94 c0             	sete   %al
+    23fd:	c3                   	ret
+    23fe:	b8 01 00 00 00       	mov    $0x1,%eax
+    2403:	c3                   	ret
+
+0000000000002404 <__Pyx_PyObject_CallMethO>:
+    2404:	41 54                	push   %r12
+    2406:	55                   	push   %rbp
+    2407:	31 ed                	xor    %ebp,%ebp
+    2409:	53                   	push   %rbx
+    240a:	48 8b 47 10          	mov    0x10(%rdi),%rax
+    240e:	48 89 f3             	mov    %rsi,%rbx
+    2411:	4c 8b 60 08          	mov    0x8(%rax),%r12
+    2415:	f6 40 10 20          	testb  $0x20,0x10(%rax)
+    2419:	75 04                	jne    241f <__Pyx_PyObject_CallMethO+0x1b>
+    241b:	48 8b 6f 18          	mov    0x18(%rdi),%rbp
+    241f:	48 8d 3d da 1b 00 00 	lea    0x1bda(%rip),%rdi        # 4000 <_fini+0x8b4>
+    2426:	e8 45 fc ff ff       	call   2070 <Py_EnterRecursiveCall@plt>
+    242b:	85 c0                	test   %eax,%eax
+    242d:	74 04                	je     2433 <__Pyx_PyObject_CallMethO+0x2f>
+    242f:	31 db                	xor    %ebx,%ebx
+    2431:	eb 38                	jmp    246b <__Pyx_PyObject_CallMethO+0x67>
+    2433:	48 89 de             	mov    %rbx,%rsi
+    2436:	48 89 ef             	mov    %rbp,%rdi
+    2439:	41 ff d4             	call   *%r12
+    243c:	48 89 c3             	mov    %rax,%rbx
+    243f:	e8 ec fd ff ff       	call   2230 <Py_LeaveRecursiveCall@plt>
+    2444:	48 85 db             	test   %rbx,%rbx
+    2447:	75 22                	jne    246b <__Pyx_PyObject_CallMethO+0x67>
+    2449:	e8 c2 fd ff ff       	call   2210 <PyErr_Occurred@plt>
+    244e:	48 85 c0             	test   %rax,%rax
+    2451:	75 dc                	jne    242f <__Pyx_PyObject_CallMethO+0x2b>
+    2453:	48 8b 05 06 3b 00 00 	mov    0x3b06(%rip),%rax        # 5f60 <PyExc_SystemError@Base>
+    245a:	48 8d 35 bf 1b 00 00 	lea    0x1bbf(%rip),%rsi        # 4020 <_fini+0x8d4>
+    2461:	48 8b 38             	mov    (%rax),%rdi
+    2464:	e8 d7 fc ff ff       	call   2140 <PyErr_SetString@plt>
+    2469:	eb c4                	jmp    242f <__Pyx_PyObject_CallMethO+0x2b>
+    246b:	48 89 d8             	mov    %rbx,%rax
+    246e:	5b                   	pop    %rbx
+    246f:	5d                   	pop    %rbp
+    2470:	41 5c                	pop    %r12
+    2472:	c3                   	ret
+
+0000000000002473 <__Pyx_ErrRestoreInState>:
+    2473:	55                   	push   %rbp
+    2474:	53                   	push   %rbx
+    2475:	41 50                	push   %r8
+    2477:	48 8b 47 60          	mov    0x60(%rdi),%rax
+    247b:	48 8b 6f 68          	mov    0x68(%rdi),%rbp
+    247f:	48 8b 5f 70          	mov    0x70(%rdi),%rbx
+    2483:	48 89 77 60          	mov    %rsi,0x60(%rdi)
+    2487:	48 89 57 68          	mov    %rdx,0x68(%rdi)
+    248b:	48 89 4f 70          	mov    %rcx,0x70(%rdi)
+    248f:	48 85 c0             	test   %rax,%rax
+    2492:	74 0d                	je     24a1 <__Pyx_ErrRestoreInState+0x2e>
+    2494:	48 ff 08             	decq   (%rax)
+    2497:	75 08                	jne    24a1 <__Pyx_ErrRestoreInState+0x2e>
+    2499:	48 89 c7             	mov    %rax,%rdi
+    249c:	e8 5f fc ff ff       	call   2100 <_Py_Dealloc@plt>
+    24a1:	48 85 ed             	test   %rbp,%rbp
+    24a4:	74 0e                	je     24b4 <__Pyx_ErrRestoreInState+0x41>
+    24a6:	48 ff 4d 00          	decq   0x0(%rbp)
+    24aa:	75 08                	jne    24b4 <__Pyx_ErrRestoreInState+0x41>
+    24ac:	48 89 ef             	mov    %rbp,%rdi
+    24af:	e8 4c fc ff ff       	call   2100 <_Py_Dealloc@plt>
+    24b4:	48 85 db             	test   %rbx,%rbx
+    24b7:	74 10                	je     24c9 <__Pyx_ErrRestoreInState+0x56>
+    24b9:	48 ff 0b             	decq   (%rbx)
+    24bc:	75 0b                	jne    24c9 <__Pyx_ErrRestoreInState+0x56>
+    24be:	5a                   	pop    %rdx
+    24bf:	48 89 df             	mov    %rbx,%rdi
+    24c2:	5b                   	pop    %rbx
+    24c3:	5d                   	pop    %rbp
+    24c4:	e9 37 fc ff ff       	jmp    2100 <_Py_Dealloc@plt>
+    24c9:	58                   	pop    %rax
+    24ca:	5b                   	pop    %rbx
+    24cb:	5d                   	pop    %rbp
+    24cc:	c3                   	ret
+
+00000000000024cd <__Pyx_copy_spec_to_module>:
+    24cd:	41 56                	push   %r14
+    24cf:	45 89 c6             	mov    %r8d,%r14d
+    24d2:	41 55                	push   %r13
+    24d4:	49 89 cd             	mov    %rcx,%r13
+    24d7:	41 54                	push   %r12
+    24d9:	49 89 f4             	mov    %rsi,%r12
+    24dc:	48 89 d6             	mov    %rdx,%rsi
+    24df:	55                   	push   %rbp
+    24e0:	53                   	push   %rbx
+    24e1:	e8 ba fb ff ff       	call   20a0 <PyObject_GetAttrString@plt>
+    24e6:	48 85 c0             	test   %rax,%rax
+    24e9:	74 33                	je     251e <__Pyx_copy_spec_to_module+0x51>
+    24eb:	48 3b 05 ae 3a 00 00 	cmp    0x3aae(%rip),%rax        # 5fa0 <_Py_NoneStruct@Base>
+    24f2:	48 89 c3             	mov    %rax,%rbx
+    24f5:	75 08                	jne    24ff <__Pyx_copy_spec_to_module+0x32>
+    24f7:	31 ed                	xor    %ebp,%ebp
+    24f9:	41 80 e6 01          	and    $0x1,%r14b
+    24fd:	74 10                	je     250f <__Pyx_copy_spec_to_module+0x42>
+    24ff:	48 89 da             	mov    %rbx,%rdx
+    2502:	4c 89 ee             	mov    %r13,%rsi
+    2505:	4c 89 e7             	mov    %r12,%rdi
+    2508:	e8 33 fb ff ff       	call   2040 <PyDict_SetItemString@plt>
+    250d:	89 c5                	mov    %eax,%ebp
+    250f:	48 ff 0b             	decq   (%rbx)
+    2512:	75 27                	jne    253b <__Pyx_copy_spec_to_module+0x6e>
+    2514:	48 89 df             	mov    %rbx,%rdi
+    2517:	e8 e4 fb ff ff       	call   2100 <_Py_Dealloc@plt>
+    251c:	eb 1d                	jmp    253b <__Pyx_copy_spec_to_module+0x6e>
+    251e:	48 8b 05 9b 3a 00 00 	mov    0x3a9b(%rip),%rax        # 5fc0 <PyExc_AttributeError@Base>
+    2525:	83 cd ff             	or     $0xffffffff,%ebp
+    2528:	48 8b 38             	mov    (%rax),%rdi
+    252b:	e8 50 fc ff ff       	call   2180 <PyErr_ExceptionMatches@plt>
+    2530:	85 c0                	test   %eax,%eax
+    2532:	74 07                	je     253b <__Pyx_copy_spec_to_module+0x6e>
+    2534:	e8 97 fc ff ff       	call   21d0 <PyErr_Clear@plt>
+    2539:	31 ed                	xor    %ebp,%ebp
+    253b:	5b                   	pop    %rbx
+    253c:	89 e8                	mov    %ebp,%eax
+    253e:	5d                   	pop    %rbp
+    253f:	41 5c                	pop    %r12
+    2541:	41 5d                	pop    %r13
+    2543:	41 5e                	pop    %r14
+    2545:	c3                   	ret
+
+0000000000002546 <__pyx_pymod_create>:
+    2546:	41 54                	push   %r12
+    2548:	55                   	push   %rbp
+    2549:	48 89 fd             	mov    %rdi,%rbp
+    254c:	53                   	push   %rbx
+    254d:	e8 9e fc ff ff       	call   21f0 <PyThreadState_Get@plt>
+    2552:	48 8b 78 10          	mov    0x10(%rax),%rdi
+    2556:	e8 f5 fb ff ff       	call   2150 <PyInterpreterState_GetID@plt>
+    255b:	48 8b 15 46 3c 00 00 	mov    0x3c46(%rip),%rdx        # 61a8 <main_interpreter_id.0>
+    2562:	48 83 fa ff          	cmp    $0xffffffffffffffff,%rdx
+    2566:	75 13                	jne    257b <__pyx_pymod_create+0x35>
+    2568:	48 89 05 39 3c 00 00 	mov    %rax,0x3c39(%rip)        # 61a8 <main_interpreter_id.0>
+    256f:	48 ff c0             	inc    %rax
+    2572:	75 24                	jne    2598 <__pyx_pymod_create+0x52>
+    2574:	31 db                	xor    %ebx,%ebx
+    2576:	e9 19 01 00 00       	jmp    2694 <__pyx_pymod_create+0x14e>
+    257b:	48 39 d0             	cmp    %rdx,%rax
+    257e:	74 18                	je     2598 <__pyx_pymod_create+0x52>
+    2580:	48 8b 05 31 3a 00 00 	mov    0x3a31(%rip),%rax        # 5fb8 <PyExc_ImportError@Base>
+    2587:	48 8d 35 c2 1a 00 00 	lea    0x1ac2(%rip),%rsi        # 4050 <_fini+0x904>
+    258e:	48 8b 38             	mov    (%rax),%rdi
+    2591:	e8 aa fb ff ff       	call   2140 <PyErr_SetString@plt>
+    2596:	eb dc                	jmp    2574 <__pyx_pymod_create+0x2e>
+    2598:	48 8b 1d 01 3e 00 00 	mov    0x3e01(%rip),%rbx        # 63a0 <__pyx_m>
+    259f:	48 85 db             	test   %rbx,%rbx
+    25a2:	74 08                	je     25ac <__pyx_pymod_create+0x66>
+    25a4:	48 ff 03             	incq   (%rbx)
+    25a7:	e9 e8 00 00 00       	jmp    2694 <__pyx_pymod_create+0x14e>
+    25ac:	48 8d 35 9b 1b 00 00 	lea    0x1b9b(%rip),%rsi        # 414e <_fini+0xa02>
+    25b3:	48 89 ef             	mov    %rbp,%rdi
+    25b6:	e8 e5 fa ff ff       	call   20a0 <PyObject_GetAttrString@plt>
+    25bb:	49 89 c4             	mov    %rax,%r12
+    25be:	48 85 c0             	test   %rax,%rax
+    25c1:	74 b1                	je     2574 <__pyx_pymod_create+0x2e>
+    25c3:	48 89 c7             	mov    %rax,%rdi
+    25c6:	e8 45 fb ff ff       	call   2110 <PyModule_NewObject@plt>
+    25cb:	49 ff 0c 24          	decq   (%r12)
+    25cf:	48 89 c3             	mov    %rax,%rbx
+    25d2:	75 08                	jne    25dc <__pyx_pymod_create+0x96>
+    25d4:	4c 89 e7             	mov    %r12,%rdi
+    25d7:	e8 24 fb ff ff       	call   2100 <_Py_Dealloc@plt>
+    25dc:	48 85 db             	test   %rbx,%rbx
+    25df:	74 93                	je     2574 <__pyx_pymod_create+0x2e>
+    25e1:	48 89 df             	mov    %rbx,%rdi
+    25e4:	e8 17 fd ff ff       	call   2300 <PyModule_GetDict@plt>
+    25e9:	49 89 c4             	mov    %rax,%r12
+    25ec:	48 85 c0             	test   %rax,%rax
+    25ef:	75 16                	jne    2607 <__pyx_pymod_create+0xc1>
+    25f1:	48 ff 0b             	decq   (%rbx)
+    25f4:	0f 85 7a ff ff ff    	jne    2574 <__pyx_pymod_create+0x2e>
+    25fa:	48 89 df             	mov    %rbx,%rdi
+    25fd:	e8 fe fa ff ff       	call   2100 <_Py_Dealloc@plt>
+    2602:	e9 6d ff ff ff       	jmp    2574 <__pyx_pymod_create+0x2e>
+    2607:	41 b8 01 00 00 00    	mov    $0x1,%r8d
+    260d:	48 8d 0d 3f 1b 00 00 	lea    0x1b3f(%rip),%rcx        # 4153 <_fini+0xa07>
+    2614:	48 89 c6             	mov    %rax,%rsi
+    2617:	48 89 ef             	mov    %rbp,%rdi
+    261a:	48 8d 15 3d 1b 00 00 	lea    0x1b3d(%rip),%rdx        # 415e <_fini+0xa12>
+    2621:	e8 a7 fe ff ff       	call   24cd <__Pyx_copy_spec_to_module>
+    2626:	85 c0                	test   %eax,%eax
+    2628:	78 c7                	js     25f1 <__pyx_pymod_create+0xab>
+    262a:	41 b8 01 00 00 00    	mov    $0x1,%r8d
+    2630:	48 8d 0d 2e 1b 00 00 	lea    0x1b2e(%rip),%rcx        # 4165 <_fini+0xa19>
+    2637:	4c 89 e6             	mov    %r12,%rsi
+    263a:	48 89 ef             	mov    %rbp,%rdi
+    263d:	48 8d 15 2a 1b 00 00 	lea    0x1b2a(%rip),%rdx        # 416e <_fini+0xa22>
+    2644:	e8 84 fe ff ff       	call   24cd <__Pyx_copy_spec_to_module>
+    2649:	85 c0                	test   %eax,%eax
+    264b:	78 a4                	js     25f1 <__pyx_pymod_create+0xab>
+    264d:	41 b8 01 00 00 00    	mov    $0x1,%r8d
+    2653:	48 8d 0d 1b 1b 00 00 	lea    0x1b1b(%rip),%rcx        # 4175 <_fini+0xa29>
+    265a:	4c 89 e6             	mov    %r12,%rsi
+    265d:	48 89 ef             	mov    %rbp,%rdi
+    2660:	48 8d 15 1a 1b 00 00 	lea    0x1b1a(%rip),%rdx        # 4181 <_fini+0xa35>
+    2667:	e8 61 fe ff ff       	call   24cd <__Pyx_copy_spec_to_module>
+    266c:	85 c0                	test   %eax,%eax
+    266e:	78 81                	js     25f1 <__pyx_pymod_create+0xab>
+    2670:	45 31 c0             	xor    %r8d,%r8d
+    2673:	48 8d 0d 0e 1b 00 00 	lea    0x1b0e(%rip),%rcx        # 4188 <_fini+0xa3c>
+    267a:	4c 89 e6             	mov    %r12,%rsi
+    267d:	48 89 ef             	mov    %rbp,%rdi
+    2680:	48 8d 15 0a 1b 00 00 	lea    0x1b0a(%rip),%rdx        # 4191 <_fini+0xa45>
+    2687:	e8 41 fe ff ff       	call   24cd <__Pyx_copy_spec_to_module>
+    268c:	85 c0                	test   %eax,%eax
+    268e:	0f 88 5d ff ff ff    	js     25f1 <__pyx_pymod_create+0xab>
+    2694:	48 89 d8             	mov    %rbx,%rax
+    2697:	5b                   	pop    %rbx
+    2698:	5d                   	pop    %rbp
+    2699:	41 5c                	pop    %r12
+    269b:	c3                   	ret
+
+000000000000269c <__Pyx_PyErr_GivenExceptionMatches.part.0>:
+    269c:	48 8b 47 08          	mov    0x8(%rdi),%rax
+    26a0:	49 89 f9             	mov    %rdi,%r9
+    26a3:	49 89 f0             	mov    %rsi,%r8
+    26a6:	f6 80 ab 00 00 00 80 	testb  $0x80,0xab(%rax)
+    26ad:	74 45                	je     26f4 <__Pyx_PyErr_GivenExceptionMatches.part.0+0x58>
+    26af:	f6 87 ab 00 00 00 40 	testb  $0x40,0xab(%rdi)
+    26b6:	74 3c                	je     26f4 <__Pyx_PyErr_GivenExceptionMatches.part.0+0x58>
+    26b8:	48 8b 46 08          	mov    0x8(%rsi),%rax
+    26bc:	48 8b 80 a8 00 00 00 	mov    0xa8(%rax),%rax
+    26c3:	0f ba e0 1f          	bt     $0x1f,%eax
+    26c7:	73 0e                	jae    26d7 <__Pyx_PyErr_GivenExceptionMatches.part.0+0x3b>
+    26c9:	f6 86 ab 00 00 00 40 	testb  $0x40,0xab(%rsi)
+    26d0:	74 05                	je     26d7 <__Pyx_PyErr_GivenExceptionMatches.part.0+0x3b>
+    26d2:	e9 d9 fc ff ff       	jmp    23b0 <__Pyx_IsSubtype>
+    26d7:	0f ba e0 1a          	bt     $0x1a,%eax
+    26db:	73 17                	jae    26f4 <__Pyx_PyErr_GivenExceptionMatches.part.0+0x58>
+    26dd:	4d 8b 58 10          	mov    0x10(%r8),%r11
+    26e1:	31 c0                	xor    %eax,%eax
+    26e3:	49 39 c3             	cmp    %rax,%r11
+    26e6:	7e 1d                	jle    2705 <__Pyx_PyErr_GivenExceptionMatches.part.0+0x69>
+    26e8:	4d 3b 4c c0 18       	cmp    0x18(%r8,%rax,8),%r9
+    26ed:	74 10                	je     26ff <__Pyx_PyErr_GivenExceptionMatches.part.0+0x63>
+    26ef:	48 ff c0             	inc    %rax
+    26f2:	eb ef                	jmp    26e3 <__Pyx_PyErr_GivenExceptionMatches.part.0+0x47>
+    26f4:	4c 89 c6             	mov    %r8,%rsi
+    26f7:	4c 89 cf             	mov    %r9,%rdi
+    26fa:	e9 31 fa ff ff       	jmp    2130 <PyErr_GivenExceptionMatches@plt>
+    26ff:	b8 01 00 00 00       	mov    $0x1,%eax
+    2704:	c3                   	ret
+    2705:	45 31 d2             	xor    %r10d,%r10d
+    2708:	4d 39 d3             	cmp    %r10,%r11
+    270b:	7f 03                	jg     2710 <__Pyx_PyErr_GivenExceptionMatches.part.0+0x74>
+    270d:	31 c0                	xor    %eax,%eax
+    270f:	c3                   	ret
+    2710:	50                   	push   %rax
+    2711:	4b 8b 74 d0 18       	mov    0x18(%r8,%r10,8),%rsi
+    2716:	48 8b 46 08          	mov    0x8(%rsi),%rax
+    271a:	f6 80 ab 00 00 00 80 	testb  $0x80,0xab(%rax)
+    2721:	74 15                	je     2738 <__Pyx_PyErr_GivenExceptionMatches.part.0+0x9c>
+    2723:	f6 86 ab 00 00 00 40 	testb  $0x40,0xab(%rsi)
+    272a:	74 0c                	je     2738 <__Pyx_PyErr_GivenExceptionMatches.part.0+0x9c>
+    272c:	4c 89 cf             	mov    %r9,%rdi
+    272f:	e8 7c fc ff ff       	call   23b0 <__Pyx_IsSubtype>
+    2734:	85 c0                	test   %eax,%eax
+    2736:	75 0c                	jne    2744 <__Pyx_PyErr_GivenExceptionMatches.part.0+0xa8>
+    2738:	49 ff c2             	inc    %r10
+    273b:	4d 39 d3             	cmp    %r10,%r11
+    273e:	7f d1                	jg     2711 <__Pyx_PyErr_GivenExceptionMatches.part.0+0x75>
+    2740:	31 c0                	xor    %eax,%eax
+    2742:	eb 05                	jmp    2749 <__Pyx_PyErr_GivenExceptionMatches.part.0+0xad>
+    2744:	b8 01 00 00 00       	mov    $0x1,%eax
+    2749:	5a                   	pop    %rdx
+    274a:	c3                   	ret
+
+000000000000274b <__Pyx_CreateStringTabAndInitStrings>:
+    274b:	55                   	push   %rbp
+    274c:	48 8d 0d dd 3b 00 00 	lea    0x3bdd(%rip),%rcx        # 6330 <__pyx_mstate_global_static+0x30>
+    2753:	31 f6                	xor    %esi,%esi
+    2755:	31 ff                	xor    %edi,%edi
+    2757:	53                   	push   %rbx
+    2758:	48 8d 05 0e 1b 00 00 	lea    0x1b0e(%rip),%rax        # 426d <__pyx_k_>
+    275f:	66 48 0f 6e c1       	movq   %rcx,%xmm0
+    2764:	45 31 c0             	xor    %r8d,%r8d
+    2767:	66 48 0f 6e c8       	movq   %rax,%xmm1
+    276c:	48 8d 59 08          	lea    0x8(%rcx),%rbx
+    2770:	48 83 c1 10          	add    $0x10,%rcx
+    2774:	31 c0                	xor    %eax,%eax
+    2776:	66 0f 6c c1          	punpcklqdq %xmm1,%xmm0
+    277a:	45 31 c9             	xor    %r9d,%r9d
+    277d:	45 31 d2             	xor    %r10d,%r10d
+    2780:	45 31 db             	xor    %r11d,%r11d
+    2783:	48 81 ec 78 01 00 00 	sub    $0x178,%rsp
+    278a:	48 8d 15 da 1a 00 00 	lea    0x1ada(%rip),%rdx        # 426b <__pyx_k_a>
+    2791:	0f 29 04 24          	movaps %xmm0,(%rsp)
+    2795:	66 48 0f 6e d2       	movq   %rdx,%xmm2
+    279a:	31 d2                	xor    %edx,%edx
+    279c:	66 48 0f 6e c3       	movq   %rbx,%xmm0
+    27a1:	48 89 54 24 40       	mov    %rdx,0x40(%rsp)
+    27a6:	66 0f 6c c2          	punpcklqdq %xmm2,%xmm0
+    27aa:	48 83 c3 10          	add    $0x10,%rbx
+    27ae:	48 89 e5             	mov    %rsp,%rbp
+    27b1:	48 8d 15 b1 1a 00 00 	lea    0x1ab1(%rip),%rdx        # 4269 <__pyx_k_b>
+    27b8:	0f 11 44 24 28       	movups %xmm0,0x28(%rsp)
+    27bd:	66 48 0f 6e c1       	movq   %rcx,%xmm0
+    27c2:	48 83 c1 10          	add    $0x10,%rcx
+    27c6:	66 48 0f 6e da       	movq   %rdx,%xmm3
+    27cb:	48 8d 15 4e 1a 00 00 	lea    0x1a4e(%rip),%rdx        # 4220 <__pyx_k_cline_in_traceback>
+    27d2:	48 89 44 24 18       	mov    %rax,0x18(%rsp)
+    27d7:	66 8b 05 92 1a 00 00 	mov    0x1a92(%rip),%ax        # 4270 <__pyx_k_+0x3>
+    27de:	66 0f 6c c3          	punpcklqdq %xmm3,%xmm0
+    27e2:	66 48 0f 6e e2       	movq   %rdx,%xmm4
+    27e7:	c6 44 24 22 01       	movb   $0x1,0x22(%rsp)
+    27ec:	48 8d 15 6d 1a 00 00 	lea    0x1a6d(%rip),%rdx        # 4260 <__pyx_k_main>
+    27f3:	0f 29 44 24 50       	movaps %xmm0,0x50(%rsp)
+    27f8:	66 48 0f 6e c3       	movq   %rbx,%xmm0
+    27fd:	66 48 0f 6e ea       	movq   %rdx,%xmm5
+    2802:	48 83 c3 10          	add    $0x10,%rbx
+    2806:	66 0f 6c c4          	punpcklqdq %xmm4,%xmm0
+    280a:	48 8d 15 3f 1a 00 00 	lea    0x1a3f(%rip),%rdx        # 4250 <__pyx_k_name>
+    2811:	66 89 44 24 20       	mov    %ax,0x20(%rsp)
+    2816:	0f 11 44 24 78       	movups %xmm0,0x78(%rsp)
+    281b:	66 48 0f 6e c1       	movq   %rcx,%xmm0
+    2820:	66 48 0f 6e f2       	movq   %rdx,%xmm6
+    2825:	48 83 c1 10          	add    $0x10,%rcx
+    2829:	66 0f 6c c5          	punpcklqdq %xmm5,%xmm0
+    282d:	48 8d 15 ff 19 00 00 	lea    0x19ff(%rip),%rdx        # 4233 <__pyx_k_print>
+    2834:	48 c7 44 24 10 02 00 	movq   $0x2,0x10(%rsp)
+    283b:	00 00 
+    283d:	0f 29 84 24 a0 00 00 	movaps %xmm0,0xa0(%rsp)
+    2844:	00 
+    2845:	66 48 0f 6e c3       	movq   %rbx,%xmm0
+    284a:	66 48 0f 6e fa       	movq   %rdx,%xmm7
+    284f:	48 83 c3 10          	add    $0x10,%rbx
+    2853:	66 0f 6c c6          	punpcklqdq %xmm6,%xmm0
+    2857:	48 8d 15 e2 19 00 00 	lea    0x19e2(%rip),%rdx        # 4240 <__pyx_k_test>
+    285e:	66 89 44 24 48       	mov    %ax,0x48(%rsp)
+    2863:	0f 11 84 24 c8 00 00 	movups %xmm0,0xc8(%rsp)
+    286a:	00 
+    286b:	66 48 0f 6e c1       	movq   %rcx,%xmm0
+    2870:	66 48 0f 6e ca       	movq   %rdx,%xmm1
+    2875:	66 0f 6c c7          	punpcklqdq %xmm7,%xmm0
+    2879:	c6 44 24 4a 01       	movb   $0x1,0x4a(%rsp)
+    287e:	48 c7 44 24 38 02 00 	movq   $0x2,0x38(%rsp)
+    2885:	00 00 
+    2887:	48 c7 44 24 60 02 00 	movq   $0x2,0x60(%rsp)
+    288e:	00 00 
+    2890:	48 89 74 24 68       	mov    %rsi,0x68(%rsp)
+    2895:	66 89 44 24 70       	mov    %ax,0x70(%rsp)
+    289a:	c6 44 24 72 01       	movb   $0x1,0x72(%rsp)
+    289f:	48 c7 84 24 88 00 00 	movq   $0x13,0x88(%rsp)
+    28a6:	00 13 00 00 00 
+    28ab:	48 89 bc 24 90 00 00 	mov    %rdi,0x90(%rsp)
+    28b2:	00 
+    28b3:	66 89 84 24 98 00 00 	mov    %ax,0x98(%rsp)
+    28ba:	00 
+    28bb:	c6 84 24 9a 00 00 00 	movb   $0x1,0x9a(%rsp)
+    28c2:	01 
+    28c3:	48 c7 84 24 b0 00 00 	movq   $0x9,0xb0(%rsp)
+    28ca:	00 09 00 00 00 
+    28cf:	4c 89 84 24 b8 00 00 	mov    %r8,0xb8(%rsp)
+    28d6:	00 
+    28d7:	66 89 84 24 c0 00 00 	mov    %ax,0xc0(%rsp)
+    28de:	00 
+    28df:	c6 84 24 c2 00 00 00 	movb   $0x1,0xc2(%rsp)
+    28e6:	01 
+    28e7:	48 c7 84 24 d8 00 00 	movq   $0x9,0xd8(%rsp)
+    28ee:	00 09 00 00 00 
+    28f3:	4c 89 8c 24 e0 00 00 	mov    %r9,0xe0(%rsp)
+    28fa:	00 
+    28fb:	66 89 84 24 e8 00 00 	mov    %ax,0xe8(%rsp)
+    2902:	00 
+    2903:	0f 29 84 24 f0 00 00 	movaps %xmm0,0xf0(%rsp)
+    290a:	00 
+    290b:	66 48 0f 6e c3       	movq   %rbx,%xmm0
+    2910:	31 db                	xor    %ebx,%ebx
+    2912:	66 0f 6c c1          	punpcklqdq %xmm1,%xmm0
+    2916:	c6 84 24 ea 00 00 00 	movb   $0x1,0xea(%rsp)
+    291d:	01 
+    291e:	48 c7 84 24 00 01 00 	movq   $0x6,0x100(%rsp)
+    2925:	00 06 00 00 00 
+    292a:	4c 89 94 24 08 01 00 	mov    %r10,0x108(%rsp)
+    2931:	00 
+    2932:	66 89 84 24 10 01 00 	mov    %ax,0x110(%rsp)
+    2939:	00 
+    293a:	c6 84 24 12 01 00 00 	movb   $0x1,0x112(%rsp)
+    2941:	01 
+    2942:	48 c7 84 24 28 01 00 	movq   $0x9,0x128(%rsp)
+    2949:	00 09 00 00 00 
+    294e:	4c 89 9c 24 30 01 00 	mov    %r11,0x130(%rsp)
+    2955:	00 
+    2956:	66 89 84 24 38 01 00 	mov    %ax,0x138(%rsp)
+    295d:	00 
+    295e:	c6 84 24 3a 01 00 00 	movb   $0x1,0x13a(%rsp)
+    2965:	01 
+    2966:	48 89 9c 24 50 01 00 	mov    %rbx,0x150(%rsp)
+    296d:	00 
+    296e:	48 89 9c 24 58 01 00 	mov    %rbx,0x158(%rsp)
+    2975:	00 
+    2976:	66 c7 84 24 60 01 00 	movw   $0x0,0x160(%rsp)
+    297d:	00 00 00 
+    2980:	c6 84 24 62 01 00 00 	movb   $0x0,0x162(%rsp)
+    2987:	00 
+    2988:	0f 11 84 24 18 01 00 	movups %xmm0,0x118(%rsp)
+    298f:	00 
+    2990:	0f 57 c0             	xorps  %xmm0,%xmm0
+    2993:	0f 29 84 24 40 01 00 	movaps %xmm0,0x140(%rsp)
+    299a:	00 
+    299b:	48 8b 5d 00          	mov    0x0(%rbp),%rbx
+    299f:	48 85 db             	test   %rbx,%rbx
+    29a2:	74 58                	je     29fc <__Pyx_CreateStringTabAndInitStrings+0x2b1>
+    29a4:	8a 45 20             	mov    0x20(%rbp),%al
+    29a7:	0a 45 21             	or     0x21(%rbp),%al
+    29aa:	48 8b 7d 08          	mov    0x8(%rbp),%rdi
+    29ae:	48 8b 75 10          	mov    0x10(%rbp),%rsi
+    29b2:	48 8b 55 18          	mov    0x18(%rbp),%rdx
+    29b6:	8a 4d 22             	mov    0x22(%rbp),%cl
+    29b9:	74 23                	je     29de <__Pyx_CreateStringTabAndInitStrings+0x293>
+    29bb:	84 c9                	test   %cl,%cl
+    29bd:	74 07                	je     29c6 <__Pyx_CreateStringTabAndInitStrings+0x27b>
+    29bf:	e8 dc f8 ff ff       	call   22a0 <PyUnicode_InternFromString@plt>
+    29c4:	eb 20                	jmp    29e6 <__Pyx_CreateStringTabAndInitStrings+0x29b>
+    29c6:	48 ff ce             	dec    %rsi
+    29c9:	48 85 d2             	test   %rdx,%rdx
+    29cc:	74 09                	je     29d7 <__Pyx_CreateStringTabAndInitStrings+0x28c>
+    29ce:	31 c9                	xor    %ecx,%ecx
+    29d0:	e8 fb f8 ff ff       	call   22d0 <PyUnicode_Decode@plt>
+    29d5:	eb 0f                	jmp    29e6 <__Pyx_CreateStringTabAndInitStrings+0x29b>
+    29d7:	e8 14 f9 ff ff       	call   22f0 <PyUnicode_FromStringAndSize@plt>
+    29dc:	eb 08                	jmp    29e6 <__Pyx_CreateStringTabAndInitStrings+0x29b>
+    29de:	48 ff ce             	dec    %rsi
+    29e1:	e8 da f6 ff ff       	call   20c0 <PyBytes_FromStringAndSize@plt>
+    29e6:	48 89 03             	mov    %rax,(%rbx)
+    29e9:	48 85 c0             	test   %rax,%rax
+    29ec:	74 08                	je     29f6 <__Pyx_CreateStringTabAndInitStrings+0x2ab>
+    29ee:	48 89 c7             	mov    %rax,%rdi
+    29f1:	e8 6a f8 ff ff       	call   2260 <PyObject_Hash@plt>
+    29f6:	48 83 c5 28          	add    $0x28,%rbp
+    29fa:	eb 9f                	jmp    299b <__Pyx_CreateStringTabAndInitStrings+0x250>
+    29fc:	48 81 c4 78 01 00 00 	add    $0x178,%rsp
+    2a03:	31 c0                	xor    %eax,%eax
+    2a05:	5b                   	pop    %rbx
+    2a06:	5d                   	pop    %rbp
+    2a07:	c3                   	ret
+
+0000000000002a08 <__Pyx_PyObject_GetAttrStrNoError>:
+    2a08:	48 8b 47 08          	mov    0x8(%rdi),%rax
+    2a0c:	48 8b 80 90 00 00 00 	mov    0x90(%rax),%rax
+    2a13:	48 3b 05 76 35 00 00 	cmp    0x3576(%rip),%rax        # 5f90 <PyObject_GenericGetAttr@Base>
+    2a1a:	75 0c                	jne    2a28 <__Pyx_PyObject_GetAttrStrNoError+0x20>
+    2a1c:	b9 01 00 00 00       	mov    $0x1,%ecx
+    2a21:	31 d2                	xor    %edx,%edx
+    2a23:	e9 a8 f6 ff ff       	jmp    20d0 <_PyObject_GenericGetAttrWithDict@plt>
+    2a28:	41 57                	push   %r15
+    2a2a:	41 56                	push   %r14
+    2a2c:	41 55                	push   %r13
+    2a2e:	41 54                	push   %r12
+    2a30:	55                   	push   %rbp
+    2a31:	53                   	push   %rbx
+    2a32:	51                   	push   %rcx
+    2a33:	48 85 c0             	test   %rax,%rax
+    2a36:	74 07                	je     2a3f <__Pyx_PyObject_GetAttrStrNoError+0x37>
+    2a38:	ff d0                	call   *%rax
+    2a3a:	48 89 c3             	mov    %rax,%rbx
+    2a3d:	eb 08                	jmp    2a47 <__Pyx_PyObject_GetAttrStrNoError+0x3f>
+    2a3f:	e8 cc f8 ff ff       	call   2310 <PyObject_GetAttr@plt>
+    2a44:	48 89 c3             	mov    %rax,%rbx
+    2a47:	48 85 db             	test   %rbx,%rbx
+    2a4a:	0f 85 88 00 00 00    	jne    2ad8 <__Pyx_PyObject_GetAttrStrNoError+0xd0>
+    2a50:	e8 fb f5 ff ff       	call   2050 <_PyThreadState_UncheckedGet@plt>
+    2a55:	49 89 c5             	mov    %rax,%r13
+    2a58:	48 8b 05 61 35 00 00 	mov    0x3561(%rip),%rax        # 5fc0 <PyExc_AttributeError@Base>
+    2a5f:	49 8b 6d 60          	mov    0x60(%r13),%rbp
+    2a63:	4c 8b 20             	mov    (%rax),%r12
+    2a66:	49 39 ec             	cmp    %rbp,%r12
+    2a69:	75 10                	jne    2a7b <__Pyx_PyObject_GetAttrStrNoError+0x73>
+    2a6b:	31 c9                	xor    %ecx,%ecx
+    2a6d:	31 d2                	xor    %edx,%edx
+    2a6f:	31 f6                	xor    %esi,%esi
+    2a71:	4c 89 ef             	mov    %r13,%rdi
+    2a74:	e8 fa f9 ff ff       	call   2473 <__Pyx_ErrRestoreInState>
+    2a79:	eb 5d                	jmp    2ad8 <__Pyx_PyObject_GetAttrStrNoError+0xd0>
+    2a7b:	48 85 ed             	test   %rbp,%rbp
+    2a7e:	74 58                	je     2ad8 <__Pyx_PyObject_GetAttrStrNoError+0xd0>
+    2a80:	49 8b 44 24 08       	mov    0x8(%r12),%rax
+    2a85:	f6 80 ab 00 00 00 04 	testb  $0x4,0xab(%rax)
+    2a8c:	74 3b                	je     2ac9 <__Pyx_PyObject_GetAttrStrNoError+0xc1>
+    2a8e:	4d 8b 7c 24 10       	mov    0x10(%r12),%r15
+    2a93:	31 c0                	xor    %eax,%eax
+    2a95:	49 39 c7             	cmp    %rax,%r15
+    2a98:	7e 0c                	jle    2aa6 <__Pyx_PyObject_GetAttrStrNoError+0x9e>
+    2a9a:	49 3b 6c c4 18       	cmp    0x18(%r12,%rax,8),%rbp
+    2a9f:	74 ca                	je     2a6b <__Pyx_PyObject_GetAttrStrNoError+0x63>
+    2aa1:	48 ff c0             	inc    %rax
+    2aa4:	eb ef                	jmp    2a95 <__Pyx_PyObject_GetAttrStrNoError+0x8d>
+    2aa6:	45 31 f6             	xor    %r14d,%r14d
+    2aa9:	4d 39 f7             	cmp    %r14,%r15
+    2aac:	7e 2a                	jle    2ad8 <__Pyx_PyObject_GetAttrStrNoError+0xd0>
+    2aae:	4b 8b 74 f4 18       	mov    0x18(%r12,%r14,8),%rsi
+    2ab3:	48 39 f5             	cmp    %rsi,%rbp
+    2ab6:	74 b3                	je     2a6b <__Pyx_PyObject_GetAttrStrNoError+0x63>
+    2ab8:	48 89 ef             	mov    %rbp,%rdi
+    2abb:	e8 dc fb ff ff       	call   269c <__Pyx_PyErr_GivenExceptionMatches.part.0>
+    2ac0:	85 c0                	test   %eax,%eax
+    2ac2:	75 a7                	jne    2a6b <__Pyx_PyObject_GetAttrStrNoError+0x63>
+    2ac4:	49 ff c6             	inc    %r14
+    2ac7:	eb e0                	jmp    2aa9 <__Pyx_PyObject_GetAttrStrNoError+0xa1>
+    2ac9:	4c 89 e6             	mov    %r12,%rsi
+    2acc:	48 89 ef             	mov    %rbp,%rdi
+    2acf:	e8 c8 fb ff ff       	call   269c <__Pyx_PyErr_GivenExceptionMatches.part.0>
+    2ad4:	85 c0                	test   %eax,%eax
+    2ad6:	75 93                	jne    2a6b <__Pyx_PyObject_GetAttrStrNoError+0x63>
+    2ad8:	5a                   	pop    %rdx
+    2ad9:	48 89 d8             	mov    %rbx,%rax
+    2adc:	5b                   	pop    %rbx
+    2add:	5d                   	pop    %rbp
+    2ade:	41 5c                	pop    %r12
+    2ae0:	41 5d                	pop    %r13
+    2ae2:	41 5e                	pop    %r14
+    2ae4:	41 5f                	pop    %r15
+    2ae6:	c3                   	ret
+
+0000000000002ae7 <__Pyx_GetBuiltinName>:
+    2ae7:	55                   	push   %rbp
+    2ae8:	48 89 fe             	mov    %rdi,%rsi
+    2aeb:	48 89 fd             	mov    %rdi,%rbp
+    2aee:	53                   	push   %rbx
+    2aef:	51                   	push   %rcx
+    2af0:	48 8b 3d 11 38 00 00 	mov    0x3811(%rip),%rdi        # 6308 <__pyx_mstate_global_static+0x8>
+    2af7:	e8 0c ff ff ff       	call   2a08 <__Pyx_PyObject_GetAttrStrNoError>
+    2afc:	48 89 c3             	mov    %rax,%rbx
+    2aff:	48 85 c0             	test   %rax,%rax
+    2b02:	75 25                	jne    2b29 <__Pyx_GetBuiltinName+0x42>
+    2b04:	e8 07 f7 ff ff       	call   2210 <PyErr_Occurred@plt>
+    2b09:	48 85 c0             	test   %rax,%rax
+    2b0c:	75 1b                	jne    2b29 <__Pyx_GetBuiltinName+0x42>
+    2b0e:	48 8b 05 b3 34 00 00 	mov    0x34b3(%rip),%rax        # 5fc8 <PyExc_NameError@Base>
+    2b15:	48 89 ea             	mov    %rbp,%rdx
+    2b18:	48 8d 35 8d 16 00 00 	lea    0x168d(%rip),%rsi        # 41ac <_fini+0xa60>
+    2b1f:	48 8b 38             	mov    (%rax),%rdi
+    2b22:	31 c0                	xor    %eax,%eax
+    2b24:	e8 b7 f7 ff ff       	call   22e0 <PyErr_Format@plt>
+    2b29:	48 89 d8             	mov    %rbx,%rax
+    2b2c:	5a                   	pop    %rdx
+    2b2d:	5b                   	pop    %rbx
+    2b2e:	5d                   	pop    %rbp
+    2b2f:	c3                   	ret
+
+0000000000002b30 <__Pyx__GetModuleGlobalName>:
+    2b30:	41 55                	push   %r13
+    2b32:	49 89 f5             	mov    %rsi,%r13
+    2b35:	48 89 fe             	mov    %rdi,%rsi
+    2b38:	41 54                	push   %r12
+    2b3a:	49 89 d4             	mov    %rdx,%r12
+    2b3d:	55                   	push   %rbp
+    2b3e:	48 89 fd             	mov    %rdi,%rbp
+    2b41:	53                   	push   %rbx
+    2b42:	41 50                	push   %r8
+    2b44:	48 8b 57 18          	mov    0x18(%rdi),%rdx
+    2b48:	48 8b 3d b1 37 00 00 	mov    0x37b1(%rip),%rdi        # 6300 <__pyx_mstate_global_static>
+    2b4f:	e8 cc f6 ff ff       	call   2220 <_PyDict_GetItem_KnownHash@plt>
+    2b54:	48 89 c3             	mov    %rax,%rbx
+    2b57:	48 8b 05 a2 37 00 00 	mov    0x37a2(%rip),%rax        # 6300 <__pyx_mstate_global_static>
+    2b5e:	48 8b 40 18          	mov    0x18(%rax),%rax
+    2b62:	49 89 45 00          	mov    %rax,0x0(%r13)
+    2b66:	49 89 1c 24          	mov    %rbx,(%r12)
+    2b6a:	48 85 db             	test   %rbx,%rbx
+    2b6d:	74 05                	je     2b74 <__Pyx__GetModuleGlobalName+0x44>
+    2b6f:	48 ff 03             	incq   (%rbx)
+    2b72:	eb 19                	jmp    2b8d <__Pyx__GetModuleGlobalName+0x5d>
+    2b74:	e8 97 f6 ff ff       	call   2210 <PyErr_Occurred@plt>
+    2b79:	48 85 c0             	test   %rax,%rax
+    2b7c:	75 0f                	jne    2b8d <__Pyx__GetModuleGlobalName+0x5d>
+    2b7e:	59                   	pop    %rcx
+    2b7f:	48 89 ef             	mov    %rbp,%rdi
+    2b82:	5b                   	pop    %rbx
+    2b83:	5d                   	pop    %rbp
+    2b84:	41 5c                	pop    %r12
+    2b86:	41 5d                	pop    %r13
+    2b88:	e9 5a ff ff ff       	jmp    2ae7 <__Pyx_GetBuiltinName>
+    2b8d:	5a                   	pop    %rdx
+    2b8e:	48 89 d8             	mov    %rbx,%rax
+    2b91:	5b                   	pop    %rbx
+    2b92:	5d                   	pop    %rbp
+    2b93:	41 5c                	pop    %r12
+    2b95:	41 5d                	pop    %r13
+    2b97:	c3                   	ret
+
+0000000000002b98 <__pyx_pymod_exec_main>:
+    2b98:	41 57                	push   %r15
+    2b9a:	41 56                	push   %r14
+    2b9c:	41 55                	push   %r13
+    2b9e:	41 54                	push   %r12
+    2ba0:	55                   	push   %rbp
+    2ba1:	53                   	push   %rbx
+    2ba2:	48 81 ec e8 00 00 00 	sub    $0xe8,%rsp
+    2ba9:	48 8b 15 f0 37 00 00 	mov    0x37f0(%rip),%rdx        # 63a0 <__pyx_m>
+    2bb0:	48 85 d2             	test   %rdx,%rdx
+    2bb3:	74 29                	je     2bde <__pyx_pymod_exec_main+0x46>
+    2bb5:	31 c0                	xor    %eax,%eax
+    2bb7:	48 39 fa             	cmp    %rdi,%rdx
+    2bba:	0f 84 a5 0a 00 00    	je     3665 <__pyx_pymod_exec_main+0xacd>
+    2bc0:	48 8b 05 b1 33 00 00 	mov    0x33b1(%rip),%rax        # 5f78 <PyExc_RuntimeError@Base>
+    2bc7:	48 8d 35 e2 14 00 00 	lea    0x14e2(%rip),%rsi        # 40b0 <_fini+0x964>
+    2bce:	48 8b 38             	mov    (%rax),%rdi
+    2bd1:	e8 6a f5 ff ff       	call   2140 <PyErr_SetString@plt>
+    2bd6:	83 c8 ff             	or     $0xffffffff,%eax
+    2bd9:	e9 87 0a 00 00       	jmp    3665 <__pyx_pymod_exec_main+0xacd>
+    2bde:	48 ff 07             	incq   (%rdi)
+    2be1:	48 89 3d b8 37 00 00 	mov    %rdi,0x37b8(%rip)        # 63a0 <__pyx_m>
+    2be8:	e8 13 f7 ff ff       	call   2300 <PyModule_GetDict@plt>
+    2bed:	48 89 05 0c 37 00 00 	mov    %rax,0x370c(%rip)        # 6300 <__pyx_mstate_global_static>
+    2bf4:	48 85 c0             	test   %rax,%rax
+    2bf7:	0f 84 ef 04 00 00    	je     30ec <__pyx_pymod_exec_main+0x554>
+    2bfd:	48 ff 00             	incq   (%rax)
+    2c00:	48 8d 3d be 15 00 00 	lea    0x15be(%rip),%rdi        # 41c5 <_fini+0xa79>
+    2c07:	e8 a4 f4 ff ff       	call   20b0 <PyImport_AddModule@plt>
+    2c0c:	48 85 c0             	test   %rax,%rax
+    2c0f:	75 1c                	jne    2c2d <__pyx_pymod_exec_main+0x95>
+    2c11:	45 31 d2             	xor    %r10d,%r10d
+    2c14:	bb 17 09 00 00       	mov    $0x917,%ebx
+    2c19:	bd 01 00 00 00       	mov    $0x1,%ebp
+    2c1e:	45 31 ed             	xor    %r13d,%r13d
+    2c21:	4c 89 15 e0 36 00 00 	mov    %r10,0x36e0(%rip)        # 6308 <__pyx_mstate_global_static+0x8>
+    2c28:	e9 7d 05 00 00       	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    2c2d:	48 ff 00             	incq   (%rax)
+    2c30:	48 8d 3d 97 15 00 00 	lea    0x1597(%rip),%rdi        # 41ce <_fini+0xa82>
+    2c37:	48 89 05 ca 36 00 00 	mov    %rax,0x36ca(%rip)        # 6308 <__pyx_mstate_global_static+0x8>
+    2c3e:	e8 6d f4 ff ff       	call   20b0 <PyImport_AddModule@plt>
+    2c43:	48 85 c0             	test   %rax,%rax
+    2c46:	74 2d                	je     2c75 <__pyx_pymod_exec_main+0xdd>
+    2c48:	48 ff 00             	incq   (%rax)
+    2c4b:	48 8b 15 b6 36 00 00 	mov    0x36b6(%rip),%rdx        # 6308 <__pyx_mstate_global_static+0x8>
+    2c52:	48 8d 35 84 15 00 00 	lea    0x1584(%rip),%rsi        # 41dd <_fini+0xa91>
+    2c59:	48 8b 3d 40 37 00 00 	mov    0x3740(%rip),%rdi        # 63a0 <__pyx_m>
+    2c60:	48 89 05 a9 36 00 00 	mov    %rax,0x36a9(%rip)        # 6310 <__pyx_mstate_global_static+0x10>
+    2c67:	e8 74 f4 ff ff       	call   20e0 <PyObject_SetAttrString@plt>
+    2c6c:	85 c0                	test   %eax,%eax
+    2c6e:	79 21                	jns    2c91 <__pyx_pymod_exec_main+0xf9>
+    2c70:	e9 89 04 00 00       	jmp    30fe <__pyx_pymod_exec_main+0x566>
+    2c75:	45 31 c9             	xor    %r9d,%r9d
+    2c78:	bb 18 09 00 00       	mov    $0x918,%ebx
+    2c7d:	bd 01 00 00 00       	mov    $0x1,%ebp
+    2c82:	45 31 ed             	xor    %r13d,%r13d
+    2c85:	4c 89 0d 84 36 00 00 	mov    %r9,0x3684(%rip)        # 6310 <__pyx_mstate_global_static+0x10>
+    2c8c:	e9 19 05 00 00       	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    2c91:	48 8b 05 00 33 00 00 	mov    0x3300(%rip),%rax        # 5f98 <Py_Version@Base>
+    2c98:	48 8b 00             	mov    (%rax),%rax
+    2c9b:	30 c0                	xor    %al,%al
+    2c9d:	48 89 c2             	mov    %rax,%rdx
+    2ca0:	48 81 f2 f0 08 0b 03 	xor    $0x30b08f0,%rdx
+    2ca7:	f7 c2 00 00 ff ff    	test   $0xffff0000,%edx
+    2cad:	75 18                	jne    2cc7 <__pyx_pymod_exec_main+0x12f>
+    2caf:	31 ff                	xor    %edi,%edi
+    2cb1:	e8 2a f5 ff ff       	call   21e0 <PyTuple_New@plt>
+    2cb6:	48 89 05 5b 36 00 00 	mov    %rax,0x365b(%rip)        # 6318 <__pyx_mstate_global_static+0x18>
+    2cbd:	48 85 c0             	test   %rax,%rax
+    2cc0:	75 75                	jne    2d37 <__pyx_pymod_exec_main+0x19f>
+    2cc2:	e9 49 04 00 00       	jmp    3110 <__pyx_pymod_exec_main+0x578>
+    2cc7:	48 89 c2             	mov    %rax,%rdx
+    2cca:	48 c1 e8 18          	shr    $0x18,%rax
+    2cce:	48 8d 5c 24 18       	lea    0x18(%rsp),%rbx
+    2cd3:	41 50                	push   %r8
+    2cd5:	48 c1 ea 10          	shr    $0x10,%rdx
+    2cd9:	be c8 00 00 00       	mov    $0xc8,%esi
+    2cde:	48 89 df             	mov    %rbx,%rdi
+    2ce1:	41 b8 0b 00 00 00    	mov    $0xb,%r8d
+    2ce7:	0f b6 d2             	movzbl %dl,%edx
+    2cea:	4c 8d 0d 14 15 00 00 	lea    0x1514(%rip),%r9        # 4205 <_fini+0xab9>
+    2cf1:	b9 03 00 00 00       	mov    $0x3,%ecx
+    2cf6:	52                   	push   %rdx
+    2cf7:	48 8d 15 02 14 00 00 	lea    0x1402(%rip),%rdx        # 4100 <_fini+0x9b4>
+    2cfe:	50                   	push   %rax
+    2cff:	48 8d 05 e4 14 00 00 	lea    0x14e4(%rip),%rax        # 41ea <_fini+0xa9e>
+    2d06:	50                   	push   %rax
+    2d07:	31 c0                	xor    %eax,%eax
+    2d09:	e8 82 f4 ff ff       	call   2190 <PyOS_snprintf@plt>
+    2d0e:	48 83 c4 20          	add    $0x20,%rsp
+    2d12:	31 ff                	xor    %edi,%edi
+    2d14:	ba 01 00 00 00       	mov    $0x1,%edx
+    2d19:	48 89 de             	mov    %rbx,%rsi
+    2d1c:	e8 cf f3 ff ff       	call   20f0 <PyErr_WarnEx@plt>
+    2d21:	85 c0                	test   %eax,%eax
+    2d23:	79 8a                	jns    2caf <__pyx_pymod_exec_main+0x117>
+    2d25:	bb 24 09 00 00       	mov    $0x924,%ebx
+    2d2a:	bd 01 00 00 00       	mov    $0x1,%ebp
+    2d2f:	45 31 ed             	xor    %r13d,%r13d
+    2d32:	e9 73 04 00 00       	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    2d37:	48 8d 1d d6 14 00 00 	lea    0x14d6(%rip),%rbx        # 4214 <_fini+0xac8>
+    2d3e:	31 f6                	xor    %esi,%esi
+    2d40:	48 89 df             	mov    %rbx,%rdi
+    2d43:	e8 78 f3 ff ff       	call   20c0 <PyBytes_FromStringAndSize@plt>
+    2d48:	48 89 05 d1 35 00 00 	mov    %rax,0x35d1(%rip)        # 6320 <__pyx_mstate_global_static+0x20>
+    2d4f:	48 85 c0             	test   %rax,%rax
+    2d52:	0f 84 ca 03 00 00    	je     3122 <__pyx_pymod_exec_main+0x58a>
+    2d58:	31 f6                	xor    %esi,%esi
+    2d5a:	48 89 df             	mov    %rbx,%rdi
+    2d5d:	e8 8e f5 ff ff       	call   22f0 <PyUnicode_FromStringAndSize@plt>
+    2d62:	48 89 05 bf 35 00 00 	mov    %rax,0x35bf(%rip)        # 6328 <__pyx_mstate_global_static+0x28>
+    2d69:	48 85 c0             	test   %rax,%rax
+    2d6c:	0f 84 bf 03 00 00    	je     3131 <__pyx_pymod_exec_main+0x599>
+    2d72:	e8 d4 f9 ff ff       	call   274b <__Pyx_CreateStringTabAndInitStrings>
+    2d77:	85 c0                	test   %eax,%eax
+    2d79:	79 12                	jns    2d8d <__pyx_pymod_exec_main+0x1f5>
+    2d7b:	bb 43 09 00 00       	mov    $0x943,%ebx
+    2d80:	bd 01 00 00 00       	mov    $0x1,%ebp
+    2d85:	45 31 ed             	xor    %r13d,%r13d
+    2d88:	e9 1d 04 00 00       	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    2d8d:	bf 01 00 00 00       	mov    $0x1,%edi
+    2d92:	e8 29 f4 ff ff       	call   21c0 <PyLong_FromLong@plt>
+    2d97:	48 89 05 d2 35 00 00 	mov    %rax,0x35d2(%rip)        # 6370 <__pyx_mstate_global_static+0x70>
+    2d9e:	48 85 c0             	test   %rax,%rax
+    2da1:	74 d8                	je     2d7b <__pyx_pymod_exec_main+0x1e3>
+    2da3:	bf 02 00 00 00       	mov    $0x2,%edi
+    2da8:	e8 13 f4 ff ff       	call   21c0 <PyLong_FromLong@plt>
+    2dad:	48 89 05 c4 35 00 00 	mov    %rax,0x35c4(%rip)        # 6378 <__pyx_mstate_global_static+0x78>
+    2db4:	48 85 c0             	test   %rax,%rax
+    2db7:	74 c2                	je     2d7b <__pyx_pymod_exec_main+0x1e3>
+    2db9:	48 8b 05 b0 31 00 00 	mov    0x31b0(%rip),%rax        # 5f70 <__pyx_module_is_main_main@@Base-0x330>
+    2dc0:	83 38 00             	cmpl   $0x0,(%rax)
+    2dc3:	75 13                	jne    2dd8 <__pyx_pymod_exec_main+0x240>
+    2dc5:	e8 56 f3 ff ff       	call   2120 <PyImport_GetModuleDict@plt>
+    2dca:	48 89 c3             	mov    %rax,%rbx
+    2dcd:	48 85 c0             	test   %rax,%rax
+    2dd0:	0f 84 6a 03 00 00    	je     3140 <__pyx_pymod_exec_main+0x5a8>
+    2dd6:	eb 33                	jmp    2e0b <__pyx_pymod_exec_main+0x273>
+    2dd8:	48 8b 15 71 35 00 00 	mov    0x3571(%rip),%rdx        # 6350 <__pyx_mstate_global_static+0x50>
+    2ddf:	48 8b 35 72 35 00 00 	mov    0x3572(%rip),%rsi        # 6358 <__pyx_mstate_global_static+0x58>
+    2de6:	48 8b 3d b3 35 00 00 	mov    0x35b3(%rip),%rdi        # 63a0 <__pyx_m>
+    2ded:	e8 0e f4 ff ff       	call   2200 <PyObject_SetAttr@plt>
+    2df2:	85 c0                	test   %eax,%eax
+    2df4:	79 cf                	jns    2dc5 <__pyx_pymod_exec_main+0x22d>
+    2df6:	bb 4a 09 00 00       	mov    $0x94a,%ebx
+    2dfb:	bd 01 00 00 00       	mov    $0x1,%ebp
+    2e00:	41 bd 01 00 00 00    	mov    $0x1,%r13d
+    2e06:	e9 9f 03 00 00       	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    2e0b:	48 8d 2d f3 13 00 00 	lea    0x13f3(%rip),%rbp        # 4205 <_fini+0xab9>
+    2e12:	48 89 c7             	mov    %rax,%rdi
+    2e15:	48 89 ee             	mov    %rbp,%rsi
+    2e18:	e8 33 f4 ff ff       	call   2250 <PyDict_GetItemString@plt>
+    2e1d:	48 85 c0             	test   %rax,%rax
+    2e20:	74 1e                	je     2e40 <__pyx_pymod_exec_main+0x2a8>
+    2e22:	48 8b 3d 37 35 00 00 	mov    0x3537(%rip),%rdi        # 6360 <__pyx_mstate_global_static+0x60>
+    2e29:	e8 b9 fc ff ff       	call   2ae7 <__Pyx_GetBuiltinName>
+    2e2e:	48 89 05 4b 35 00 00 	mov    %rax,0x354b(%rip)        # 6380 <__pyx_builtin_print>
+    2e35:	48 85 c0             	test   %rax,%rax
+    2e38:	0f 84 14 03 00 00    	je     3152 <__pyx_pymod_exec_main+0x5ba>
+    2e3e:	eb 2b                	jmp    2e6b <__pyx_pymod_exec_main+0x2d3>
+    2e40:	48 8b 15 59 35 00 00 	mov    0x3559(%rip),%rdx        # 63a0 <__pyx_m>
+    2e47:	48 89 ee             	mov    %rbp,%rsi
+    2e4a:	48 89 df             	mov    %rbx,%rdi
+    2e4d:	e8 ee f1 ff ff       	call   2040 <PyDict_SetItemString@plt>
+    2e52:	85 c0                	test   %eax,%eax
+    2e54:	79 cc                	jns    2e22 <__pyx_pymod_exec_main+0x28a>
+    2e56:	bb 50 09 00 00       	mov    $0x950,%ebx
+    2e5b:	bd 01 00 00 00       	mov    $0x1,%ebp
+    2e60:	41 bd 01 00 00 00    	mov    $0x1,%r13d
+    2e66:	e9 3f 03 00 00       	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    2e6b:	48 8b 15 fe 34 00 00 	mov    0x34fe(%rip),%rdx        # 6370 <__pyx_mstate_global_static+0x70>
+    2e72:	48 8b 35 bf 34 00 00 	mov    0x34bf(%rip),%rsi        # 6338 <__pyx_mstate_global_static+0x38>
+    2e79:	48 8b 3d 80 34 00 00 	mov    0x3480(%rip),%rdi        # 6300 <__pyx_mstate_global_static>
+    2e80:	e8 2b f4 ff ff       	call   22b0 <PyDict_SetItem@plt>
+    2e85:	85 c0                	test   %eax,%eax
+    2e87:	0f 88 d7 02 00 00    	js     3164 <__pyx_pymod_exec_main+0x5cc>
+    2e8d:	48 8b 15 e4 34 00 00 	mov    0x34e4(%rip),%rdx        # 6378 <__pyx_mstate_global_static+0x78>
+    2e94:	48 8b 35 a5 34 00 00 	mov    0x34a5(%rip),%rsi        # 6340 <__pyx_mstate_global_static+0x40>
+    2e9b:	48 8b 3d 5e 34 00 00 	mov    0x345e(%rip),%rdi        # 6300 <__pyx_mstate_global_static>
+    2ea2:	e8 09 f4 ff ff       	call   22b0 <PyDict_SetItem@plt>
+    2ea7:	85 c0                	test   %eax,%eax
+    2ea9:	0f 88 c7 02 00 00    	js     3176 <__pyx_pymod_exec_main+0x5de>
+    2eaf:	48 8b 05 4a 34 00 00 	mov    0x344a(%rip),%rax        # 6300 <__pyx_mstate_global_static>
+    2eb6:	48 8b 0d 13 34 00 00 	mov    0x3413(%rip),%rcx        # 62d0 <__pyx_dict_version.6>
+    2ebd:	48 39 48 18          	cmp    %rcx,0x18(%rax)
+    2ec1:	75 22                	jne    2ee5 <__pyx_pymod_exec_main+0x34d>
+    2ec3:	48 8b 1d fe 33 00 00 	mov    0x33fe(%rip),%rbx        # 62c8 <__pyx_dict_cached_value.5>
+    2eca:	48 85 db             	test   %rbx,%rbx
+    2ecd:	74 05                	je     2ed4 <__pyx_pymod_exec_main+0x33c>
+    2ecf:	48 ff 03             	incq   (%rbx)
+    2ed2:	eb 37                	jmp    2f0b <__pyx_pymod_exec_main+0x373>
+    2ed4:	48 8b 3d 5d 34 00 00 	mov    0x345d(%rip),%rdi        # 6338 <__pyx_mstate_global_static+0x38>
+    2edb:	e8 07 fc ff ff       	call   2ae7 <__Pyx_GetBuiltinName>
+    2ee0:	48 89 c3             	mov    %rax,%rbx
+    2ee3:	eb 1d                	jmp    2f02 <__pyx_pymod_exec_main+0x36a>
+    2ee5:	48 8b 3d 4c 34 00 00 	mov    0x344c(%rip),%rdi        # 6338 <__pyx_mstate_global_static+0x38>
+    2eec:	48 8d 15 d5 33 00 00 	lea    0x33d5(%rip),%rdx        # 62c8 <__pyx_dict_cached_value.5>
+    2ef3:	48 8d 35 d6 33 00 00 	lea    0x33d6(%rip),%rsi        # 62d0 <__pyx_dict_version.6>
+    2efa:	e8 31 fc ff ff       	call   2b30 <__Pyx__GetModuleGlobalName>
+    2eff:	48 89 c3             	mov    %rax,%rbx
+    2f02:	48 85 db             	test   %rbx,%rbx
+    2f05:	0f 84 7d 02 00 00    	je     3188 <__pyx_pymod_exec_main+0x5f0>
+    2f0b:	48 8b 05 ee 33 00 00 	mov    0x33ee(%rip),%rax        # 6300 <__pyx_mstate_global_static>
+    2f12:	48 8b 0d a7 33 00 00 	mov    0x33a7(%rip),%rcx        # 62c0 <__pyx_dict_version.4>
+    2f19:	48 39 48 18          	cmp    %rcx,0x18(%rax)
+    2f1d:	75 23                	jne    2f42 <__pyx_pymod_exec_main+0x3aa>
+    2f1f:	4c 8b 25 92 33 00 00 	mov    0x3392(%rip),%r12        # 62b8 <__pyx_dict_cached_value.3>
+    2f26:	4d 85 e4             	test   %r12,%r12
+    2f29:	74 06                	je     2f31 <__pyx_pymod_exec_main+0x399>
+    2f2b:	49 ff 04 24          	incq   (%r12)
+    2f2f:	eb 37                	jmp    2f68 <__pyx_pymod_exec_main+0x3d0>
+    2f31:	48 8b 3d 08 34 00 00 	mov    0x3408(%rip),%rdi        # 6340 <__pyx_mstate_global_static+0x40>
+    2f38:	e8 aa fb ff ff       	call   2ae7 <__Pyx_GetBuiltinName>
+    2f3d:	49 89 c4             	mov    %rax,%r12
+    2f40:	eb 1d                	jmp    2f5f <__pyx_pymod_exec_main+0x3c7>
+    2f42:	48 8b 3d f7 33 00 00 	mov    0x33f7(%rip),%rdi        # 6340 <__pyx_mstate_global_static+0x40>
+    2f49:	48 8d 15 68 33 00 00 	lea    0x3368(%rip),%rdx        # 62b8 <__pyx_dict_cached_value.3>
+    2f50:	48 8d 35 69 33 00 00 	lea    0x3369(%rip),%rsi        # 62c0 <__pyx_dict_version.4>
+    2f57:	e8 d4 fb ff ff       	call   2b30 <__Pyx__GetModuleGlobalName>
+    2f5c:	49 89 c4             	mov    %rax,%r12
+    2f5f:	4d 85 e4             	test   %r12,%r12
+    2f62:	0f 84 1b 01 00 00    	je     3083 <__pyx_pymod_exec_main+0x4eb>
+    2f68:	4c 89 e6             	mov    %r12,%rsi
+    2f6b:	48 89 df             	mov    %rbx,%rdi
+    2f6e:	e8 1d f1 ff ff       	call   2090 <PyNumber_Add@plt>
+    2f73:	48 85 c0             	test   %rax,%rax
+    2f76:	48 89 c5             	mov    %rax,%rbp
+    2f79:	48 8b 03             	mov    (%rbx),%rax
+    2f7c:	0f 84 10 01 00 00    	je     3092 <__pyx_pymod_exec_main+0x4fa>
+    2f82:	48 ff c8             	dec    %rax
+    2f85:	48 89 03             	mov    %rax,(%rbx)
+    2f88:	75 08                	jne    2f92 <__pyx_pymod_exec_main+0x3fa>
+    2f8a:	48 89 df             	mov    %rbx,%rdi
+    2f8d:	e8 6e f1 ff ff       	call   2100 <_Py_Dealloc@plt>
+    2f92:	49 ff 0c 24          	decq   (%r12)
+    2f96:	75 08                	jne    2fa0 <__pyx_pymod_exec_main+0x408>
+    2f98:	4c 89 e7             	mov    %r12,%rdi
+    2f9b:	e8 60 f1 ff ff       	call   2100 <_Py_Dealloc@plt>
+    2fa0:	48 8b 1d d9 33 00 00 	mov    0x33d9(%rip),%rbx        # 6380 <__pyx_builtin_print>
+    2fa7:	31 ff                	xor    %edi,%edi
+    2fa9:	48 89 6c 24 20       	mov    %rbp,0x20(%rsp)
+    2fae:	48 89 7c 24 18       	mov    %rdi,0x18(%rsp)
+    2fb3:	48 8b 35 1e 30 00 00 	mov    0x301e(%rip),%rsi        # 5fd8 <PyCFunction_Type@Base>
+    2fba:	48 8b 7b 08          	mov    0x8(%rbx),%rdi
+    2fbe:	48 39 f7             	cmp    %rsi,%rdi
+    2fc1:	75 1c                	jne    2fdf <__pyx_pymod_exec_main+0x447>
+    2fc3:	48 8b 43 10          	mov    0x10(%rbx),%rax
+    2fc7:	f6 40 10 08          	testb  $0x8,0x10(%rax)
+    2fcb:	74 1b                	je     2fe8 <__pyx_pymod_exec_main+0x450>
+    2fcd:	48 8b 74 24 20       	mov    0x20(%rsp),%rsi
+    2fd2:	48 89 df             	mov    %rbx,%rdi
+    2fd5:	e8 2a f4 ff ff       	call   2404 <__Pyx_PyObject_CallMethO>
+    2fda:	48 89 c3             	mov    %rax,%rbx
+    2fdd:	eb 34                	jmp    3013 <__pyx_pymod_exec_main+0x47b>
+    2fdf:	e8 dc f2 ff ff       	call   22c0 <PyType_IsSubtype@plt>
+    2fe4:	85 c0                	test   %eax,%eax
+    2fe6:	75 db                	jne    2fc3 <__pyx_pymod_exec_main+0x42b>
+    2fe8:	48 89 df             	mov    %rbx,%rdi
+    2feb:	e8 70 f1 ff ff       	call   2160 <PyVectorcall_Function@plt>
+    2ff0:	31 c9                	xor    %ecx,%ecx
+    2ff2:	ba 01 00 00 00       	mov    $0x1,%edx
+    2ff7:	48 89 df             	mov    %rbx,%rdi
+    2ffa:	48 85 c0             	test   %rax,%rax
+    2ffd:	48 8d 74 24 20       	lea    0x20(%rsp),%rsi
+    3002:	74 07                	je     300b <__pyx_pymod_exec_main+0x473>
+    3004:	ff d0                	call   *%rax
+    3006:	48 89 c3             	mov    %rax,%rbx
+    3009:	eb 08                	jmp    3013 <__pyx_pymod_exec_main+0x47b>
+    300b:	e8 30 f2 ff ff       	call   2240 <PyObject_VectorcallDict@plt>
+    3010:	48 89 c3             	mov    %rax,%rbx
+    3013:	48 8b 45 00          	mov    0x0(%rbp),%rax
+    3017:	48 ff c8             	dec    %rax
+    301a:	48 89 45 00          	mov    %rax,0x0(%rbp)
+    301e:	48 85 db             	test   %rbx,%rbx
+    3021:	0f 84 1c 06 00 00    	je     3643 <__pyx_pymod_exec_main+0xaab>
+    3027:	48 85 c0             	test   %rax,%rax
+    302a:	75 08                	jne    3034 <__pyx_pymod_exec_main+0x49c>
+    302c:	48 89 ef             	mov    %rbp,%rdi
+    302f:	e8 cc f0 ff ff       	call   2100 <_Py_Dealloc@plt>
+    3034:	48 ff 0b             	decq   (%rbx)
+    3037:	75 08                	jne    3041 <__pyx_pymod_exec_main+0x4a9>
+    3039:	48 89 df             	mov    %rbx,%rdi
+    303c:	e8 bf f0 ff ff       	call   2100 <_Py_Dealloc@plt>
+    3041:	e8 2a f2 ff ff       	call   2270 <PyDict_New@plt>
+    3046:	49 89 c4             	mov    %rax,%r12
+    3049:	48 85 c0             	test   %rax,%rax
+    304c:	0f 84 48 01 00 00    	je     319a <__pyx_pymod_exec_main+0x602>
+    3052:	48 8b 35 0f 33 00 00 	mov    0x330f(%rip),%rsi        # 6368 <__pyx_mstate_global_static+0x68>
+    3059:	48 8b 3d a0 32 00 00 	mov    0x32a0(%rip),%rdi        # 6300 <__pyx_mstate_global_static>
+    3060:	48 89 c2             	mov    %rax,%rdx
+    3063:	e8 48 f2 ff ff       	call   22b0 <PyDict_SetItem@plt>
+    3068:	85 c0                	test   %eax,%eax
+    306a:	78 59                	js     30c5 <__pyx_pymod_exec_main+0x52d>
+    306c:	49 ff 0c 24          	decq   (%r12)
+    3070:	0f 85 c1 05 00 00    	jne    3637 <__pyx_pymod_exec_main+0xa9f>
+    3076:	4c 89 e7             	mov    %r12,%rdi
+    3079:	e8 82 f0 ff ff       	call   2100 <_Py_Dealloc@plt>
+    307e:	e9 b4 05 00 00       	jmp    3637 <__pyx_pymod_exec_main+0xa9f>
+    3083:	48 ff 0b             	decq   (%rbx)
+    3086:	75 1c                	jne    30a4 <__pyx_pymod_exec_main+0x50c>
+    3088:	48 89 df             	mov    %rbx,%rdi
+    308b:	e8 70 f0 ff ff       	call   2100 <_Py_Dealloc@plt>
+    3090:	eb 12                	jmp    30a4 <__pyx_pymod_exec_main+0x50c>
+    3092:	48 ff c8             	dec    %rax
+    3095:	48 89 03             	mov    %rax,(%rbx)
+    3098:	75 1f                	jne    30b9 <__pyx_pymod_exec_main+0x521>
+    309a:	48 89 df             	mov    %rbx,%rdi
+    309d:	e8 5e f0 ff ff       	call   2100 <_Py_Dealloc@plt>
+    30a2:	eb 15                	jmp    30b9 <__pyx_pymod_exec_main+0x521>
+    30a4:	bb 7a 09 00 00       	mov    $0x97a,%ebx
+    30a9:	bd 03 00 00 00       	mov    $0x3,%ebp
+    30ae:	41 bd 01 00 00 00    	mov    $0x1,%r13d
+    30b4:	e9 f1 00 00 00       	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    30b9:	bb 7c 09 00 00       	mov    $0x97c,%ebx
+    30be:	bd 03 00 00 00       	mov    $0x3,%ebp
+    30c3:	eb 0a                	jmp    30cf <__pyx_pymod_exec_main+0x537>
+    30c5:	bb 8c 09 00 00       	mov    $0x98c,%ebx
+    30ca:	bd 01 00 00 00       	mov    $0x1,%ebp
+    30cf:	49 ff 0c 24          	decq   (%r12)
+    30d3:	41 bd 01 00 00 00    	mov    $0x1,%r13d
+    30d9:	0f 85 cb 00 00 00    	jne    31aa <__pyx_pymod_exec_main+0x612>
+    30df:	4c 89 e7             	mov    %r12,%rdi
+    30e2:	e8 19 f0 ff ff       	call   2100 <_Py_Dealloc@plt>
+    30e7:	e9 be 00 00 00       	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    30ec:	bb 15 09 00 00       	mov    $0x915,%ebx
+    30f1:	bd 01 00 00 00       	mov    $0x1,%ebp
+    30f6:	45 31 ed             	xor    %r13d,%r13d
+    30f9:	e9 ac 00 00 00       	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    30fe:	bb 19 09 00 00       	mov    $0x919,%ebx
+    3103:	bd 01 00 00 00       	mov    $0x1,%ebp
+    3108:	45 31 ed             	xor    %r13d,%r13d
+    310b:	e9 9a 00 00 00       	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    3110:	bb 28 09 00 00       	mov    $0x928,%ebx
+    3115:	bd 01 00 00 00       	mov    $0x1,%ebp
+    311a:	45 31 ed             	xor    %r13d,%r13d
+    311d:	e9 88 00 00 00       	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    3122:	bb 29 09 00 00       	mov    $0x929,%ebx
+    3127:	bd 01 00 00 00       	mov    $0x1,%ebp
+    312c:	45 31 ed             	xor    %r13d,%r13d
+    312f:	eb 79                	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    3131:	bb 2a 09 00 00       	mov    $0x92a,%ebx
+    3136:	bd 01 00 00 00       	mov    $0x1,%ebp
+    313b:	45 31 ed             	xor    %r13d,%r13d
+    313e:	eb 6a                	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    3140:	bb 4e 09 00 00       	mov    $0x94e,%ebx
+    3145:	bd 01 00 00 00       	mov    $0x1,%ebp
+    314a:	41 bd 01 00 00 00    	mov    $0x1,%r13d
+    3150:	eb 58                	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    3152:	bb 55 09 00 00       	mov    $0x955,%ebx
+    3157:	bd 01 00 00 00       	mov    $0x1,%ebp
+    315c:	41 bd 01 00 00 00    	mov    $0x1,%r13d
+    3162:	eb 46                	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    3164:	bb 6a 09 00 00       	mov    $0x96a,%ebx
+    3169:	bd 01 00 00 00       	mov    $0x1,%ebp
+    316e:	41 bd 01 00 00 00    	mov    $0x1,%r13d
+    3174:	eb 34                	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    3176:	bb 71 09 00 00       	mov    $0x971,%ebx
+    317b:	bd 02 00 00 00       	mov    $0x2,%ebp
+    3180:	41 bd 01 00 00 00    	mov    $0x1,%r13d
+    3186:	eb 22                	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    3188:	bb 78 09 00 00       	mov    $0x978,%ebx
+    318d:	bd 03 00 00 00       	mov    $0x3,%ebp
+    3192:	41 bd 01 00 00 00    	mov    $0x1,%r13d
+    3198:	eb 10                	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    319a:	bb 8a 09 00 00       	mov    $0x98a,%ebx
+    319f:	bd 01 00 00 00       	mov    $0x1,%ebp
+    31a4:	41 bd 01 00 00 00    	mov    $0x1,%r13d
+    31aa:	48 83 3d ee 31 00 00 	cmpq   $0x0,0x31ee(%rip)        # 63a0 <__pyx_m>
+    31b1:	00 
+    31b2:	0f 84 5f 04 00 00    	je     3617 <__pyx_pymod_exec_main+0xa7f>
+    31b8:	48 83 3d 40 31 00 00 	cmpq   $0x0,0x3140(%rip)        # 6300 <__pyx_mstate_global_static>
+    31bf:	00 
+    31c0:	0f 84 30 04 00 00    	je     35f6 <__pyx_pymod_exec_main+0xa5e>
+    31c6:	45 85 ed             	test   %r13d,%r13d
+    31c9:	0f 84 27 04 00 00    	je     35f6 <__pyx_pymod_exec_main+0xa5e>
+    31cf:	e8 7c ee ff ff       	call   2050 <_PyThreadState_UncheckedGet@plt>
+    31d4:	48 8b 3d 35 31 00 00 	mov    0x3135(%rip),%rdi        # 6310 <__pyx_mstate_global_static+0x10>
+    31db:	49 89 c4             	mov    %rax,%r12
+    31de:	48 85 ff             	test   %rdi,%rdi
+    31e1:	0f 84 5a 01 00 00    	je     3341 <__pyx_pymod_exec_main+0x7a9>
+    31e7:	31 f6                	xor    %esi,%esi
+    31e9:	4c 8b 78 70          	mov    0x70(%rax),%r15
+    31ed:	0f 57 c0             	xorps  %xmm0,%xmm0
+    31f0:	4c 8b 68 60          	mov    0x60(%rax),%r13
+    31f4:	48 89 70 70          	mov    %rsi,0x70(%rax)
+    31f8:	4c 8b 70 68          	mov    0x68(%rax),%r14
+    31fc:	0f 11 40 60          	movups %xmm0,0x60(%rax)
+    3200:	e8 8b f0 ff ff       	call   2290 <_PyObject_GetDictPtr@plt>
+    3205:	48 89 c1             	mov    %rax,%rcx
+    3208:	48 85 c0             	test   %rax,%rax
+    320b:	74 7e                	je     328b <__pyx_pymod_exec_main+0x6f3>
+    320d:	48 8b 38             	mov    (%rax),%rdi
+    3210:	48 8b 05 99 30 00 00 	mov    0x3099(%rip),%rax        # 62b0 <__pyx_dict_version.2>
+    3217:	48 39 47 18          	cmp    %rax,0x18(%rdi)
+    321b:	75 15                	jne    3232 <__pyx_pymod_exec_main+0x69a>
+    321d:	48 8b 05 84 30 00 00 	mov    0x3084(%rip),%rax        # 62a8 <__pyx_dict_cached_value.1>
+    3224:	48 85 c0             	test   %rax,%rax
+    3227:	0f 85 e5 00 00 00    	jne    3312 <__pyx_pymod_exec_main+0x77a>
+    322d:	e9 ae 00 00 00       	jmp    32e0 <__pyx_pymod_exec_main+0x748>
+    3232:	48 8b 35 0f 31 00 00 	mov    0x310f(%rip),%rsi        # 6348 <__pyx_mstate_global_static+0x48>
+    3239:	48 89 0c 24          	mov    %rcx,(%rsp)
+    323d:	48 8b 56 18          	mov    0x18(%rsi),%rdx
+    3241:	e8 da ef ff ff       	call   2220 <_PyDict_GetItem_KnownHash@plt>
+    3246:	48 8b 0c 24          	mov    (%rsp),%rcx
+    324a:	48 85 c0             	test   %rax,%rax
+    324d:	75 22                	jne    3271 <__pyx_pymod_exec_main+0x6d9>
+    324f:	e8 7c ef ff ff       	call   21d0 <PyErr_Clear@plt>
+    3254:	31 c9                	xor    %ecx,%ecx
+    3256:	48 89 0d 4b 30 00 00 	mov    %rcx,0x304b(%rip)        # 62a8 <__pyx_dict_cached_value.1>
+    325d:	48 8b 0c 24          	mov    (%rsp),%rcx
+    3261:	48 8b 01             	mov    (%rcx),%rax
+    3264:	48 8b 40 18          	mov    0x18(%rax),%rax
+    3268:	48 89 05 41 30 00 00 	mov    %rax,0x3041(%rip)        # 62b0 <__pyx_dict_version.2>
+    326f:	eb 6f                	jmp    32e0 <__pyx_pymod_exec_main+0x748>
+    3271:	48 8b 11             	mov    (%rcx),%rdx
+    3274:	48 89 05 2d 30 00 00 	mov    %rax,0x302d(%rip)        # 62a8 <__pyx_dict_cached_value.1>
+    327b:	48 8b 52 18          	mov    0x18(%rdx),%rdx
+    327f:	48 89 15 2a 30 00 00 	mov    %rdx,0x302a(%rip)        # 62b0 <__pyx_dict_version.2>
+    3286:	e9 87 00 00 00       	jmp    3312 <__pyx_pymod_exec_main+0x77a>
+    328b:	48 8b 3d 7e 30 00 00 	mov    0x307e(%rip),%rdi        # 6310 <__pyx_mstate_global_static+0x10>
+    3292:	48 8b 35 af 30 00 00 	mov    0x30af(%rip),%rsi        # 6348 <__pyx_mstate_global_static+0x48>
+    3299:	e8 6a f7 ff ff       	call   2a08 <__Pyx_PyObject_GetAttrStrNoError>
+    329e:	48 89 c7             	mov    %rax,%rdi
+    32a1:	48 85 c0             	test   %rax,%rax
+    32a4:	74 35                	je     32db <__pyx_pymod_exec_main+0x743>
+    32a6:	48 89 04 24          	mov    %rax,(%rsp)
+    32aa:	e8 01 ef ff ff       	call   21b0 <PyObject_Not@plt>
+    32af:	48 8b 3c 24          	mov    (%rsp),%rdi
+    32b3:	85 c0                	test   %eax,%eax
+    32b5:	74 09                	je     32c0 <__pyx_pymod_exec_main+0x728>
+    32b7:	48 8b 05 c2 2c 00 00 	mov    0x2cc2(%rip),%rax        # 5f80 <_Py_FalseStruct@Base>
+    32be:	eb 07                	jmp    32c7 <__pyx_pymod_exec_main+0x72f>
+    32c0:	48 8b 05 e1 2c 00 00 	mov    0x2ce1(%rip),%rax        # 5fa8 <_Py_TrueStruct@Base>
+    32c7:	48 ff 0f             	decq   (%rdi)
+    32ca:	75 46                	jne    3312 <__pyx_pymod_exec_main+0x77a>
+    32cc:	48 89 04 24          	mov    %rax,(%rsp)
+    32d0:	e8 2b ee ff ff       	call   2100 <_Py_Dealloc@plt>
+    32d5:	48 8b 04 24          	mov    (%rsp),%rax
+    32d9:	eb 37                	jmp    3312 <__pyx_pymod_exec_main+0x77a>
+    32db:	e8 f0 ee ff ff       	call   21d0 <PyErr_Clear@plt>
+    32e0:	48 8b 15 99 2c 00 00 	mov    0x2c99(%rip),%rdx        # 5f80 <_Py_FalseStruct@Base>
+    32e7:	48 8b 35 5a 30 00 00 	mov    0x305a(%rip),%rsi        # 6348 <__pyx_mstate_global_static+0x48>
+    32ee:	48 8b 3d 1b 30 00 00 	mov    0x301b(%rip),%rdi        # 6310 <__pyx_mstate_global_static+0x10>
+    32f5:	e8 06 ef ff ff       	call   2200 <PyObject_SetAttr@plt>
+    32fa:	4c 89 f9             	mov    %r15,%rcx
+    32fd:	4c 89 f2             	mov    %r14,%rdx
+    3300:	4c 89 ee             	mov    %r13,%rsi
+    3303:	4c 89 e7             	mov    %r12,%rdi
+    3306:	e8 68 f1 ff ff       	call   2473 <__Pyx_ErrRestoreInState>
+    330b:	31 db                	xor    %ebx,%ebx
+    330d:	41 89 ea             	mov    %ebp,%r10d
+    3310:	eb 35                	jmp    3347 <__pyx_pymod_exec_main+0x7af>
+    3312:	48 3b 05 67 2c 00 00 	cmp    0x2c67(%rip),%rax        # 5f80 <_Py_FalseStruct@Base>
+    3319:	74 df                	je     32fa <__pyx_pymod_exec_main+0x762>
+    331b:	48 3b 05 86 2c 00 00 	cmp    0x2c86(%rip),%rax        # 5fa8 <_Py_TrueStruct@Base>
+    3322:	74 0c                	je     3330 <__pyx_pymod_exec_main+0x798>
+    3324:	48 89 c7             	mov    %rax,%rdi
+    3327:	e8 84 ee ff ff       	call   21b0 <PyObject_Not@plt>
+    332c:	85 c0                	test   %eax,%eax
+    332e:	75 ca                	jne    32fa <__pyx_pymod_exec_main+0x762>
+    3330:	4c 89 f9             	mov    %r15,%rcx
+    3333:	4c 89 f2             	mov    %r14,%rdx
+    3336:	4c 89 ee             	mov    %r13,%rsi
+    3339:	4c 89 e7             	mov    %r12,%rdi
+    333c:	e8 32 f1 ff ff       	call   2473 <__Pyx_ErrRestoreInState>
+    3341:	41 89 da             	mov    %ebx,%r10d
+    3344:	41 f7 da             	neg    %r10d
+    3347:	48 8b 3d 4a 30 00 00 	mov    0x304a(%rip),%rdi        # 6398 <__pyx_code_cache+0x8>
+    334e:	48 85 ff             	test   %rdi,%rdi
+    3351:	74 31                	je     3384 <__pyx_pymod_exec_main+0x7ec>
+    3353:	44 8b 1d 36 30 00 00 	mov    0x3036(%rip),%r11d        # 6390 <__pyx_code_cache>
+    335a:	44 89 d2             	mov    %r10d,%edx
+    335d:	44 89 de             	mov    %r11d,%esi
+    3360:	e8 eb ef ff ff       	call   2350 <__pyx_bisect_code_objects>
+    3365:	41 39 c3             	cmp    %eax,%r11d
+    3368:	7e 1a                	jle    3384 <__pyx_pymod_exec_main+0x7ec>
+    336a:	48 98                	cltq
+    336c:	48 c1 e0 04          	shl    $0x4,%rax
+    3370:	48 01 c7             	add    %rax,%rdi
+    3373:	44 39 57 08          	cmp    %r10d,0x8(%rdi)
+    3377:	75 0b                	jne    3384 <__pyx_pymod_exec_main+0x7ec>
+    3379:	4c 8b 3f             	mov    (%rdi),%r15
+    337c:	49 ff 07             	incq   (%r15)
+    337f:	e9 22 02 00 00       	jmp    35a6 <__pyx_pymod_exec_main+0xa0e>
+    3384:	49 8b 44 24 70       	mov    0x70(%r12),%rax
+    3389:	31 d2                	xor    %edx,%edx
+    338b:	0f 57 c0             	xorps  %xmm0,%xmm0
+    338e:	85 db                	test   %ebx,%ebx
+    3390:	4d 8b 6c 24 60       	mov    0x60(%r12),%r13
+    3395:	4d 8b 74 24 68       	mov    0x68(%r12),%r14
+    339a:	49 89 54 24 70       	mov    %rdx,0x70(%r12)
+    339f:	48 8d 35 5a 0e 00 00 	lea    0xe5a(%rip),%rsi        # 4200 <_fini+0xab4>
+    33a6:	48 89 04 24          	mov    %rax,(%rsp)
+    33aa:	41 0f 11 44 24 60    	movups %xmm0,0x60(%r12)
+    33b0:	74 6f                	je     3421 <__pyx_pymod_exec_main+0x889>
+    33b2:	31 c0                	xor    %eax,%eax
+    33b4:	89 d9                	mov    %ebx,%ecx
+    33b6:	48 8d 15 3c 0e 00 00 	lea    0xe3c(%rip),%rdx        # 41f9 <_fini+0xaad>
+    33bd:	48 8d 3d 46 0e 00 00 	lea    0xe46(%rip),%rdi        # 420a <_fini+0xabe>
+    33c4:	e8 67 ec ff ff       	call   2030 <PyUnicode_FromFormat@plt>
+    33c9:	48 85 c0             	test   %rax,%rax
+    33cc:	74 69                	je     3437 <__pyx_pymod_exec_main+0x89f>
+    33ce:	48 89 c7             	mov    %rax,%rdi
+    33d1:	48 89 44 24 08       	mov    %rax,0x8(%rsp)
+    33d6:	e8 a5 ee ff ff       	call   2280 <PyUnicode_AsUTF8@plt>
+    33db:	48 8b 4c 24 08       	mov    0x8(%rsp),%rcx
+    33e0:	48 85 c0             	test   %rax,%rax
+    33e3:	48 89 c6             	mov    %rax,%rsi
+    33e6:	75 0f                	jne    33f7 <__pyx_pymod_exec_main+0x85f>
+    33e8:	48 ff 09             	decq   (%rcx)
+    33eb:	75 4a                	jne    3437 <__pyx_pymod_exec_main+0x89f>
+    33ed:	48 89 cf             	mov    %rcx,%rdi
+    33f0:	e8 0b ed ff ff       	call   2100 <_Py_Dealloc@plt>
+    33f5:	eb 40                	jmp    3437 <__pyx_pymod_exec_main+0x89f>
+    33f7:	89 ea                	mov    %ebp,%edx
+    33f9:	48 8d 3d 15 0e 00 00 	lea    0xe15(%rip),%rdi        # 4215 <_fini+0xac9>
+    3400:	48 89 4c 24 08       	mov    %rcx,0x8(%rsp)
+    3405:	e8 26 ef ff ff       	call   2330 <PyCode_NewEmpty@plt>
+    340a:	48 8b 4c 24 08       	mov    0x8(%rsp),%rcx
+    340f:	49 89 c7             	mov    %rax,%r15
+    3412:	48 ff 09             	decq   (%rcx)
+    3415:	75 1b                	jne    3432 <__pyx_pymod_exec_main+0x89a>
+    3417:	48 89 cf             	mov    %rcx,%rdi
+    341a:	e8 e1 ec ff ff       	call   2100 <_Py_Dealloc@plt>
+    341f:	eb 11                	jmp    3432 <__pyx_pymod_exec_main+0x89a>
+    3421:	89 ea                	mov    %ebp,%edx
+    3423:	48 8d 3d eb 0d 00 00 	lea    0xdeb(%rip),%rdi        # 4215 <_fini+0xac9>
+    342a:	e8 01 ef ff ff       	call   2330 <PyCode_NewEmpty@plt>
+    342f:	49 89 c7             	mov    %rax,%r15
+    3432:	4d 85 ff             	test   %r15,%r15
+    3435:	75 59                	jne    3490 <__pyx_pymod_exec_main+0x8f8>
+    3437:	4d 85 ed             	test   %r13,%r13
+    343a:	74 0e                	je     344a <__pyx_pymod_exec_main+0x8b2>
+    343c:	49 ff 4d 00          	decq   0x0(%r13)
+    3440:	75 08                	jne    344a <__pyx_pymod_exec_main+0x8b2>
+    3442:	4c 89 ef             	mov    %r13,%rdi
+    3445:	e8 b6 ec ff ff       	call   2100 <_Py_Dealloc@plt>
+    344a:	4d 85 f6             	test   %r14,%r14
+    344d:	74 0d                	je     345c <__pyx_pymod_exec_main+0x8c4>
+    344f:	49 ff 0e             	decq   (%r14)
+    3452:	75 08                	jne    345c <__pyx_pymod_exec_main+0x8c4>
+    3454:	4c 89 f7             	mov    %r14,%rdi
+    3457:	e8 a4 ec ff ff       	call   2100 <_Py_Dealloc@plt>
+    345c:	48 83 3c 24 00       	cmpq   $0x0,(%rsp)
+    3461:	0f 84 8f 01 00 00    	je     35f6 <__pyx_pymod_exec_main+0xa5e>
+    3467:	48 8b 04 24          	mov    (%rsp),%rax
+    346b:	48 8b 0c 24          	mov    (%rsp),%rcx
+    346f:	48 8b 00             	mov    (%rax),%rax
+    3472:	48 89 44 24 08       	mov    %rax,0x8(%rsp)
+    3477:	48 ff c8             	dec    %rax
+    347a:	48 89 01             	mov    %rax,(%rcx)
+    347d:	0f 85 73 01 00 00    	jne    35f6 <__pyx_pymod_exec_main+0xa5e>
+    3483:	48 89 cf             	mov    %rcx,%rdi
+    3486:	e8 75 ec ff ff       	call   2100 <_Py_Dealloc@plt>
+    348b:	e9 66 01 00 00       	jmp    35f6 <__pyx_pymod_exec_main+0xa5e>
+    3490:	48 8b 0c 24          	mov    (%rsp),%rcx
+    3494:	4c 89 e7             	mov    %r12,%rdi
+    3497:	4c 89 f2             	mov    %r14,%rdx
+    349a:	4c 89 ee             	mov    %r13,%rsi
+    349d:	e8 d1 ef ff ff       	call   2473 <__Pyx_ErrRestoreInState>
+    34a2:	85 db                	test   %ebx,%ebx
+    34a4:	48 8b 3d ed 2e 00 00 	mov    0x2eed(%rip),%rdi        # 6398 <__pyx_code_cache+0x8>
+    34ab:	74 07                	je     34b4 <__pyx_pymod_exec_main+0x91c>
+    34ad:	f7 db                	neg    %ebx
+    34af:	49 89 fa             	mov    %rdi,%r10
+    34b2:	eb 05                	jmp    34b9 <__pyx_pymod_exec_main+0x921>
+    34b4:	49 89 fa             	mov    %rdi,%r10
+    34b7:	89 eb                	mov    %ebp,%ebx
+    34b9:	48 85 ff             	test   %rdi,%rdi
+    34bc:	75 36                	jne    34f4 <__pyx_pymod_exec_main+0x95c>
+    34be:	bf 00 04 00 00       	mov    $0x400,%edi
+    34c3:	e8 58 ee ff ff       	call   2320 <PyMem_Malloc@plt>
+    34c8:	48 85 c0             	test   %rax,%rax
+    34cb:	0f 84 d5 00 00 00    	je     35a6 <__pyx_pymod_exec_main+0xa0e>
+    34d1:	48 8b 15 a0 0d 00 00 	mov    0xda0(%rip),%rdx        # 4278 <__pyx_k_+0xb>
+    34d8:	48 89 05 b9 2e 00 00 	mov    %rax,0x2eb9(%rip)        # 6398 <__pyx_code_cache+0x8>
+    34df:	89 58 08             	mov    %ebx,0x8(%rax)
+    34e2:	48 89 15 a7 2e 00 00 	mov    %rdx,0x2ea7(%rip)        # 6390 <__pyx_code_cache>
+    34e9:	4c 89 38             	mov    %r15,(%rax)
+    34ec:	49 ff 07             	incq   (%r15)
+    34ef:	e9 b2 00 00 00       	jmp    35a6 <__pyx_pymod_exec_main+0xa0e>
+    34f4:	44 8b 35 95 2e 00 00 	mov    0x2e95(%rip),%r14d        # 6390 <__pyx_code_cache>
+    34fb:	89 da                	mov    %ebx,%edx
+    34fd:	44 89 f6             	mov    %r14d,%esi
+    3500:	e8 4b ee ff ff       	call   2350 <__pyx_bisect_code_objects>
+    3505:	4c 63 e8             	movslq %eax,%r13
+    3508:	45 39 ee             	cmp    %r13d,%r14d
+    350b:	7e 21                	jle    352e <__pyx_pymod_exec_main+0x996>
+    350d:	49 63 c5             	movslq %r13d,%rax
+    3510:	48 c1 e0 04          	shl    $0x4,%rax
+    3514:	48 01 f8             	add    %rdi,%rax
+    3517:	39 58 08             	cmp    %ebx,0x8(%rax)
+    351a:	75 12                	jne    352e <__pyx_pymod_exec_main+0x996>
+    351c:	48 8b 38             	mov    (%rax),%rdi
+    351f:	4c 89 38             	mov    %r15,(%rax)
+    3522:	48 ff 0f             	decq   (%rdi)
+    3525:	75 7f                	jne    35a6 <__pyx_pymod_exec_main+0xa0e>
+    3527:	e8 d4 eb ff ff       	call   2100 <_Py_Dealloc@plt>
+    352c:	eb 78                	jmp    35a6 <__pyx_pymod_exec_main+0xa0e>
+    352e:	44 3b 35 5f 2e 00 00 	cmp    0x2e5f(%rip),%r14d        # 6394 <__pyx_code_cache+0x4>
+    3535:	75 26                	jne    355d <__pyx_pymod_exec_main+0x9c5>
+    3537:	41 83 c6 40          	add    $0x40,%r14d
+    353b:	49 63 f6             	movslq %r14d,%rsi
+    353e:	48 c1 e6 04          	shl    $0x4,%rsi
+    3542:	e8 29 ec ff ff       	call   2170 <PyMem_Realloc@plt>
+    3547:	49 89 c2             	mov    %rax,%r10
+    354a:	48 85 c0             	test   %rax,%rax
+    354d:	74 57                	je     35a6 <__pyx_pymod_exec_main+0xa0e>
+    354f:	48 89 05 42 2e 00 00 	mov    %rax,0x2e42(%rip)        # 6398 <__pyx_code_cache+0x8>
+    3556:	44 89 35 37 2e 00 00 	mov    %r14d,0x2e37(%rip)        # 6394 <__pyx_code_cache+0x4>
+    355d:	48 63 05 2c 2e 00 00 	movslq 0x2e2c(%rip),%rax        # 6390 <__pyx_code_cache>
+    3564:	48 89 c2             	mov    %rax,%rdx
+    3567:	48 c1 e0 04          	shl    $0x4,%rax
+    356b:	4c 01 d0             	add    %r10,%rax
+    356e:	89 d1                	mov    %edx,%ecx
+    3570:	41 39 cd             	cmp    %ecx,%r13d
+    3573:	7d 18                	jge    358d <__pyx_pymod_exec_main+0x9f5>
+    3575:	ff c9                	dec    %ecx
+    3577:	48 83 e8 10          	sub    $0x10,%rax
+    357b:	48 63 f1             	movslq %ecx,%rsi
+    357e:	48 c1 e6 04          	shl    $0x4,%rsi
+    3582:	41 0f 10 0c 32       	movups (%r10,%rsi,1),%xmm1
+    3587:	0f 11 48 10          	movups %xmm1,0x10(%rax)
+    358b:	eb e3                	jmp    3570 <__pyx_pymod_exec_main+0x9d8>
+    358d:	49 c1 e5 04          	shl    $0x4,%r13
+    3591:	ff c2                	inc    %edx
+    3593:	4d 01 ea             	add    %r13,%r10
+    3596:	89 15 f4 2d 00 00    	mov    %edx,0x2df4(%rip)        # 6390 <__pyx_code_cache>
+    359c:	41 89 5a 08          	mov    %ebx,0x8(%r10)
+    35a0:	4d 89 3a             	mov    %r15,(%r10)
+    35a3:	49 ff 07             	incq   (%r15)
+    35a6:	48 8b 15 53 2d 00 00 	mov    0x2d53(%rip),%rdx        # 6300 <__pyx_mstate_global_static>
+    35ad:	31 c9                	xor    %ecx,%ecx
+    35af:	4c 89 fe             	mov    %r15,%rsi
+    35b2:	4c 89 e7             	mov    %r12,%rdi
+    35b5:	e8 c6 ea ff ff       	call   2080 <PyFrame_New@plt>
+    35ba:	48 89 c3             	mov    %rax,%rbx
+    35bd:	48 85 c0             	test   %rax,%rax
+    35c0:	75 0f                	jne    35d1 <__pyx_pymod_exec_main+0xa39>
+    35c2:	49 ff 0f             	decq   (%r15)
+    35c5:	75 2f                	jne    35f6 <__pyx_pymod_exec_main+0xa5e>
+    35c7:	4c 89 ff             	mov    %r15,%rdi
+    35ca:	e8 31 eb ff ff       	call   2100 <_Py_Dealloc@plt>
+    35cf:	eb 25                	jmp    35f6 <__pyx_pymod_exec_main+0xa5e>
+    35d1:	89 68 28             	mov    %ebp,0x28(%rax)
+    35d4:	48 89 c7             	mov    %rax,%rdi
+    35d7:	e8 c4 eb ff ff       	call   21a0 <PyTraceBack_Here@plt>
+    35dc:	49 ff 0f             	decq   (%r15)
+    35df:	75 08                	jne    35e9 <__pyx_pymod_exec_main+0xa51>
+    35e1:	4c 89 ff             	mov    %r15,%rdi
+    35e4:	e8 17 eb ff ff       	call   2100 <_Py_Dealloc@plt>
+    35e9:	48 ff 0b             	decq   (%rbx)
+    35ec:	75 08                	jne    35f6 <__pyx_pymod_exec_main+0xa5e>
+    35ee:	48 89 df             	mov    %rbx,%rdi
+    35f1:	e8 0a eb ff ff       	call   2100 <_Py_Dealloc@plt>
+    35f6:	48 8b 3d a3 2d 00 00 	mov    0x2da3(%rip),%rdi        # 63a0 <__pyx_m>
+    35fd:	48 85 ff             	test   %rdi,%rdi
+    3600:	74 35                	je     3637 <__pyx_pymod_exec_main+0xa9f>
+    3602:	31 c0                	xor    %eax,%eax
+    3604:	48 ff 0f             	decq   (%rdi)
+    3607:	48 89 05 92 2d 00 00 	mov    %rax,0x2d92(%rip)        # 63a0 <__pyx_m>
+    360e:	75 27                	jne    3637 <__pyx_pymod_exec_main+0xa9f>
+    3610:	e8 eb ea ff ff       	call   2100 <_Py_Dealloc@plt>
+    3615:	eb 20                	jmp    3637 <__pyx_pymod_exec_main+0xa9f>
+    3617:	e8 f4 eb ff ff       	call   2210 <PyErr_Occurred@plt>
+    361c:	48 85 c0             	test   %rax,%rax
+    361f:	75 16                	jne    3637 <__pyx_pymod_exec_main+0xa9f>
+    3621:	48 8b 05 90 29 00 00 	mov    0x2990(%rip),%rax        # 5fb8 <PyExc_ImportError@Base>
+    3628:	48 8d 35 d1 0b 00 00 	lea    0xbd1(%rip),%rsi        # 4200 <_fini+0xab4>
+    362f:	48 8b 38             	mov    (%rax),%rdi
+    3632:	e8 09 eb ff ff       	call   2140 <PyErr_SetString@plt>
+    3637:	48 83 3d 61 2d 00 00 	cmpq   $0x1,0x2d61(%rip)        # 63a0 <__pyx_m>
+    363e:	01 
+    363f:	19 c0                	sbb    %eax,%eax
+    3641:	eb 22                	jmp    3665 <__pyx_pymod_exec_main+0xacd>
+    3643:	48 85 c0             	test   %rax,%rax
+    3646:	75 08                	jne    3650 <__pyx_pymod_exec_main+0xab8>
+    3648:	48 89 ef             	mov    %rbp,%rdi
+    364b:	e8 b0 ea ff ff       	call   2100 <_Py_Dealloc@plt>
+    3650:	bb 80 09 00 00       	mov    $0x980,%ebx
+    3655:	bd 03 00 00 00       	mov    $0x3,%ebp
+    365a:	41 bd 01 00 00 00    	mov    $0x1,%r13d
+    3660:	e9 45 fb ff ff       	jmp    31aa <__pyx_pymod_exec_main+0x612>
+    3665:	48 81 c4 e8 00 00 00 	add    $0xe8,%rsp
+    366c:	5b                   	pop    %rbx
+    366d:	5d                   	pop    %rbp
+    366e:	41 5c                	pop    %r12
+    3670:	41 5d                	pop    %r13
+    3672:	41 5e                	pop    %r14
+    3674:	41 5f                	pop    %r15
+    3676:	c3                   	ret
+
+0000000000003677 <PyInit_main>:
+    3677:	48 8d 3d 42 2b 00 00 	lea    0x2b42(%rip),%rdi        # 61c0 <__pyx_moduledef>
+    367e:	e9 dd e9 ff ff       	jmp    2060 <PyModuleDef_Init@plt>
+    3683:	66 2e 0f 1f 84 00 00 	cs nopw 0x0(%rax,%rax,1)
+    368a:	00 00 00 
+    368d:	0f 1f 00             	nopl   (%rax)
+
+0000000000003690 <deregister_tm_clones>:
+    3690:	48 8d 3d d9 2b 00 00 	lea    0x2bd9(%rip),%rdi        # 6270 <__TMC_END__>
+    3697:	48 8d 05 d2 2b 00 00 	lea    0x2bd2(%rip),%rax        # 6270 <__TMC_END__>
+    369e:	48 39 f8             	cmp    %rdi,%rax
+    36a1:	74 15                	je     36b8 <deregister_tm_clones+0x28>
+    36a3:	48 8b 05 be 28 00 00 	mov    0x28be(%rip),%rax        # 5f68 <_ITM_deregisterTMCloneTable@Base>
+    36aa:	48 85 c0             	test   %rax,%rax
+    36ad:	74 09                	je     36b8 <deregister_tm_clones+0x28>
+    36af:	ff e0                	jmp    *%rax
+    36b1:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+    36b8:	c3                   	ret
+    36b9:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+00000000000036c0 <register_tm_clones>:
+    36c0:	48 8d 3d a9 2b 00 00 	lea    0x2ba9(%rip),%rdi        # 6270 <__TMC_END__>
+    36c7:	48 8d 35 a2 2b 00 00 	lea    0x2ba2(%rip),%rsi        # 6270 <__TMC_END__>
+    36ce:	48 29 fe             	sub    %rdi,%rsi
+    36d1:	48 89 f0             	mov    %rsi,%rax
+    36d4:	48 c1 ee 3f          	shr    $0x3f,%rsi
+    36d8:	48 c1 f8 03          	sar    $0x3,%rax
+    36dc:	48 01 c6             	add    %rax,%rsi
+    36df:	48 d1 fe             	sar    %rsi
+    36e2:	74 14                	je     36f8 <register_tm_clones+0x38>
+    36e4:	48 8b 05 e5 28 00 00 	mov    0x28e5(%rip),%rax        # 5fd0 <_ITM_registerTMCloneTable@Base>
+    36eb:	48 85 c0             	test   %rax,%rax
+    36ee:	74 08                	je     36f8 <register_tm_clones+0x38>
+    36f0:	ff e0                	jmp    *%rax
+    36f2:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+    36f8:	c3                   	ret
+    36f9:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+0000000000003700 <__do_global_dtors_aux>:
+    3700:	f3 0f 1e fa          	endbr64
+    3704:	80 3d 75 2b 00 00 00 	cmpb   $0x0,0x2b75(%rip)        # 6280 <completed.0>
+    370b:	75 2b                	jne    3738 <__do_global_dtors_aux+0x38>
+    370d:	55                   	push   %rbp
+    370e:	48 83 3d ca 28 00 00 	cmpq   $0x0,0x28ca(%rip)        # 5fe0 <__cxa_finalize@GLIBC_2.2.5>
+    3715:	00 
+    3716:	48 89 e5             	mov    %rsp,%rbp
+    3719:	74 0c                	je     3727 <__do_global_dtors_aux+0x27>
+    371b:	48 8b 3d 7e 2a 00 00 	mov    0x2a7e(%rip),%rdi        # 61a0 <__dso_handle>
+    3722:	e8 19 ec ff ff       	call   2340 <__cxa_finalize@plt>
+    3727:	e8 64 ff ff ff       	call   3690 <deregister_tm_clones>
+    372c:	c6 05 4d 2b 00 00 01 	movb   $0x1,0x2b4d(%rip)        # 6280 <completed.0>
+    3733:	5d                   	pop    %rbp
+    3734:	c3                   	ret
+    3735:	0f 1f 00             	nopl   (%rax)
+    3738:	c3                   	ret
+    3739:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+0000000000003740 <frame_dummy>:
+    3740:	f3 0f 1e fa          	endbr64
+    3744:	e9 77 ff ff ff       	jmp    36c0 <register_tm_clones>
+
+Disassembly of section .fini:
+
+000000000000374c <_fini>:
+    374c:	f3 0f 1e fa          	endbr64
+    3750:	48 83 ec 08          	sub    $0x8,%rsp
+    3754:	48 83 c4 08          	add    $0x8,%rsp
+    3758:	c3                   	ret

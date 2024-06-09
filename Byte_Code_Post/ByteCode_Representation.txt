@@ -1,0 +1,18 @@
+  0           0 RESUME                   0
+
+  2           2 LOAD_CONST               0 (1)
+              4 STORE_NAME               0 (a)
+
+  3           6 LOAD_CONST               1 (2)
+              8 STORE_NAME               1 (b)
+
+  4          10 PUSH_NULL
+             12 LOAD_NAME                2 (print)
+             14 LOAD_NAME                0 (a)
+             16 LOAD_NAME                1 (b)
+             18 BINARY_OP                0 (+)
+             22 PRECALL                  1
+             26 CALL                     1
+             36 POP_TOP
+             38 LOAD_CONST               2 (None)
+             40 RETURN_VALUE
